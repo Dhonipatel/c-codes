@@ -1,8 +1,7 @@
 #include<iostream>
-#define PI 3.14
 using namespace std;
 
 int main () {
-    cout<<PI;
+    cout<<"apna collage\n"<<"is for programmer";
     return 0;
 }
