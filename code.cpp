@@ -59,14 +59,48 @@
 // ////////////// INPUT IN C++
 
 
+// #include <iostream>
+// using namespace std;
+
+// int main () {
+//     int age; //garbage value
+//     cout<<"Enter your age : ";
+//     cin>>age;
+
+//     cout<<"your age is " <<age<<endl;
+//     return 0;
+// }
+
+// 
+
+
+// ACTIVITY
+
 #include <iostream>
 using namespace std;
 
 int main () {
-    int age; //garbage value
-    cout<<"Enter your age : ";
-    cin>>age;
+    int a;
+    int b;
 
-    cout<<"your age is " <<age<<endl;
+    // inter a
+    cout<<"enter a : ";
+    cin>>a;
+     
+    // inter b
+
+    cout<<"enter b :";
+    cin>>b;
+
+    // calculate sum
+
+    int sum = a + b;
+    int prod = a * b;
+    int dif = a - b;
+    cout<<"sum = "<<sum<<endl;
+    cout<<"prod = "<<prod<<endl;
+    cout << "dif = "<<dif<<endl;
     return 0;
+
+
 }
