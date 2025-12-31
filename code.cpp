@@ -74,33 +74,60 @@
 // 
 
 
-// ACTIVITY
+// // ACTIVITY
+
+// #include <iostream>
+// using namespace std;
+
+// int main () {
+//     int a;
+//     int b;
+
+//     // inter a
+//     cout<<"enter a : ";
+//     cin>>a;
+     
+//     // inter b
+
+//     cout<<"enter b :";
+//     cin>>b;
+
+//     // calculate sum
+
+//     int sum = a + b;
+//     int prod = a * b;
+//     int dif = a - b;
+//     cout<<"sum = "<<sum<<endl;
+//     cout<<"prod = "<<prod<<endl;
+//     cout << "dif = "<<dif<<endl;
+//     return 0;
+
+
+// }
+
 
 #include <iostream>
 using namespace std;
 
 int main () {
-    int a;
-    int b;
+    float eng ;
+    float science;
+   float math;
 
-    // inter a
-    cout<<"enter a : ";
-    cin>>a;
-     
-    // inter b
+    cout<<"enter english marks : ";
+    cin>>eng;
 
-    cout<<"enter b :";
-    cin>>b;
+    cout<<"enter science marks :";
+    cin>>science;
 
-    // calculate sum
+    cout<<"enter math marks :";
+    cin>>math;
 
-    int sum = a + b;
-    int prod = a * b;
-    int dif = a - b;
-    cout<<"sum = "<<sum<<endl;
-    cout<<"prod = "<<prod<<endl;
-    cout << "dif = "<<dif<<endl;
-    return 0;
+    float avg = (eng + science + math) / 3;
+    cout <<"avg marks = "<<avg<<endl;
+
+return 0;
+
 
 
 }
