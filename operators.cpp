@@ -22,17 +22,27 @@
 
 // TYPECASTING IN C++
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main () { 
+// int main () { 
 
-// cout<< (10/3) << endl; //3 
-// cout<< (10/3.0) << endl; //3.3333
-cout << ('A' + 1) << endl; //65
-cout << ('a' + 1) << endl; //65
+// // cout<< (10/3) << endl; //3 
+// // cout<< (10/3.0) << endl; //3.3333
 
-cout << ('A' + 0) << endl; //65
-cout << ('a' + 0) << endl; //97
+// // cout << ('A' + 1) << endl; //65
+// // cout << ('a' + 1) << endl; //65
 
-}
+// // cout << ('A' + 0) << endl; //65
+// // cout << ('a' + 0) << endl; //97
+
+// // typecasting explicit 
+
+// float PI = 3.14;
+// cout << (int)(PI) << endl; //3
+// cout << ((float)10/3) << endl; //3.3333
+// cout << (char) ('A' + 1) << endl; //B
+
+// }
+
+
