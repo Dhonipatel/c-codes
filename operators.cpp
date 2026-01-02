@@ -46,3 +46,87 @@
 // }
 
 
+// // PRACTICE Qs
+
+// #include <iostream>
+// using namespace std;
+
+// int main () {
+//     cout <<(bool)3 + 2 << endl;
+//     cout << (23.5 + 2 + 'A') << endl;
+
+//     return 0;
+// }
+
+
+
+// TYPE OF OPEATORS IN C++
+
+
+// #include <iostream>
+// using namespace std;
+
+// int main () {
+
+//     // // Arithemtic Opertors////
+
+//     // // Binary 
+
+//     // int  a = 5;
+//     // int b = 3;
+
+//     // cout << "+" << (a + b) << endl; //8
+//     // cout << "-" << (a - b) << endl; //2
+//     // cout << "*" << (a * b) << endl; //15
+//     // cout << "/" << (a / b) << endl; //1
+//     // cout << "%" << (a % b) << endl; // Modulo (remainder)2
+
+
+
+//     // // Unary 
+
+//     int a = 5;
+
+//     //  a++;
+//     //  cout << "a = " << a << endl; //6
+
+//     //   a--;
+//     //  cout << "a = " << a << endl; //5
+
+//     int b = a--; // post derement
+//     // int b = --a; // pre derement
+//     cout << "a =" << a << endl; //2
+//     cout << " b = " << b << endl; //3
+
+
+
+
+
+
+//     return 0;
+// }
+
+
+#include <iostream>
+using namespace std;
+
+int main () { 
+
+    int a = 10;
+
+    a += 5; // a = a + 5
+    cout << "a =" << a << endl; // 15
+
+      a -= 5; // a = a - 5
+    cout << "a =" << a << endl; // 10
+
+      a *= 5; // a = a * 5
+    cout << "a =" << a << endl; // 50
+
+      a /= 5; // a = a / 5
+    cout << "a =" << a << endl; // 10
+
+
+
+    return 0;
+}
