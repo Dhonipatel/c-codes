@@ -107,26 +107,81 @@
 // }
 
 
+
+
+// // ASSIGMENT OPERATORS IN C++
+// #include <iostream>
+// using namespace std;
+
+// int main () { 
+
+//     int a = 10;
+
+//     a += 5; // a = a + 5
+//     cout << "a =" << a << endl; // 15
+
+//       a -= 5; // a = a - 5
+//     cout << "a =" << a << endl; // 10
+
+//       a *= 5; // a = a * 5
+//     cout << "a =" << a << endl; // 50
+
+//       a /= 5; // a = a / 5
+//     cout << "a =" << a << endl; // 10
+
+
+
+//     return 0;
+
+// }
+
+
+
+
+// // RELATIONAL OPERATORS IN C++
+// #include <iostream>
+// using namespace std;
+
+// int main () { 
+
+
+//   int a = 3;
+//   int b = 5;
+//     cout << (a > b) << endl; // false -> 0
+//     cout << (a < b) << endl; // true -> 1
+//     cout << (a == b) << endl; // false -> 0
+//     cout << (a != b) << endl; // true -> 1
+    
+
+//     return 0;
+// }
+
+// // LOGICAL OPERATORS IN C++
+#include <iostream>
+using namespace std;
+int main () {
+
+  cout << ((3 > 2) && (5 > 2)) << endl; // true && true -> 1
+  cout << (( 3 > 2) || (5 < 2)) << endl; // true || false -> 1
+  cout << (!(3 > 2)) << endl; // !true -> false ->
+  return 0;
+
+}
+
+
+
+
+// LIVE SESSION Qs 
+
 #include <iostream>
 using namespace std;
 
-int main () { 
+int main () {
+  int b = 5;
+  int c = --b;
 
-    int a = 10;
-
-    a += 5; // a = a + 5
-    cout << "a =" << a << endl; // 15
-
-      a -= 5; // a = a - 5
-    cout << "a =" << a << endl; // 10
-
-      a *= 5; // a = a * 5
-    cout << "a =" << a << endl; // 50
-
-      a /= 5; // a = a / 5
-    cout << "a =" << a << endl; // 10
-
-
-
-    return 0;
+  int x = 'a'+ b++ - c;
+  
+  cout << "" <<c<<""<<x<<endl;
+  return 0;
 }
