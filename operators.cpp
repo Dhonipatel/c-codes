@@ -156,17 +156,17 @@
 //     return 0;
 // }
 
-// // LOGICAL OPERATORS IN C++
-#include <iostream>
-using namespace std;
-int main () {
+// // // LOGICAL OPERATORS IN C++
+// #include <iostream>
+// using namespace std;
+// int main () {
 
-  cout << ((3 > 2) && (5 > 2)) << endl; // true && true -> 1
-  cout << (( 3 > 2) || (5 < 2)) << endl; // true || false -> 1
-  cout << (!(3 > 2)) << endl; // !true -> false ->
-  return 0;
+//   cout << ((3 > 2) && (5 > 2)) << endl; // true && true -> 1
+//   cout << (( 3 > 2) || (5 < 2)) << endl; // true || false -> 1
+//   cout << (!(3 > 2)) << endl; // !true -> false ->
+//   return 0;
 
-}
+// }
 
 
 
@@ -177,11 +177,16 @@ int main () {
 using namespace std;
 
 int main () {
-  int b = 5;
-  int c = --b;
+  // int b = 5;
+  // int c = --b;
 
-  int x = 'a'+ b++ - c;
-  
-  cout << "" <<c<<""<<x<<endl;
-  return 0;
+  // int x = 'a' + b++ - c;
+ 
+  // cout<<b<< " " <<c<<" "<<x<<endl;
+
+  int b = 5;
+  int x = ++b + b++;
+  cout<<b<< " " <<x<<endl;
+
+
 }
