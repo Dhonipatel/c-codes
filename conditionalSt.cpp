@@ -75,34 +75,62 @@ int main () {
     // };
 
 
-    int marks ;
-    cout<<"enter your marks : ";
+    // int marks ;
+    // cout<<"enter your marks : ";
  
-    cin>> marks;
+    // cin>> marks;
 
-    if(marks > 90 ) {
-        cout << "grade A++ "<< endl;
-    }else if (marks >= 80) {
-        cout << "grade A " <<endl;
+    // if(marks > 90 ) {
+    //     cout << "grade A++ "<< endl;
+    // }else if (marks >= 80) {
+    //     cout << "grade A " <<endl;
 
-    } else{
-        cout << "grade B" << endl;
-    };
+    // } else{
+    //     cout << "grade B" << endl;
+    // };
 
-    int income ;
-    cout<<"enter your income: ";
-    cin>> income;
 
-    if(income < 500000) {
-        cout<<"you have no tax "<< endl;
+    // int income ;
+    // float tax;
+    // cout<<"enter your income (in lakhs): ";
+    // cin>> income;
 
-    }else if (income >= 500000 && income < 1000000) {
-        cout<<"you have to pay 20% tax" << endl;
+    // if(income < 5) {
+    //        tax = 0;
+    //     cout<<"you have no tax " <<endl;
+      
 
-    }else {
-        cout<<"you have to pay 30% tax"<< endl;
+    // }else if (income >= 5 && income < 10) {
+    //      tax = 0.2 * income;
+    //     cout<<"you have to pay 20% tax" << endl;
+     
+    // }else {
+    //     tax = 0.3 *income;
+    //     cout<<"you have to pay 30% tax"<< endl;
+        
+    // }
+    // cout << " Tax = " <<(tax *100000)<< endl;
+
+
+    int a, b, c ;
+
+    cout<<" enter a :";
+    cin>> a;
+
+    cout<<" enter b :";
+    cin>> b;
+
+    cout<<" enter c :";
+    cin>> c;
+
+    if ( a >= b && a >= c) {
+        cout << " a is largest number"<< endl;
+    } else if (b >= c) {
+        cout << " b is largest number"<< endl;
+
+    } else {
+        cout << "c is largest numbe "<< endl;
     }
-
 
 
 
