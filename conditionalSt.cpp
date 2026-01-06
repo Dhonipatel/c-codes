@@ -89,6 +89,21 @@ int main () {
         cout << "grade B" << endl;
     };
 
+    int income ;
+    cout<<"enter your income: ";
+    cin>> income;
+
+    if(income < 500000) {
+        cout<<"you have no tax "<< endl;
+
+    }else if (income >= 500000 && income < 1000000) {
+        cout<<"you have to pay 20% tax" << endl;
+
+    }else {
+        cout<<"you have to pay 30% tax"<< endl;
+    }
+
+
 
 
     return 0;
