@@ -112,25 +112,57 @@ int main () {
     // cout << " Tax = " <<(tax *100000)<< endl;
 
 
-    int a, b, c ;
+    // int a, b, c ;
 
-    cout<<" enter a :";
-    cin>> a;
+    // cout<<" enter a :";
+    // cin>> a;
 
-    cout<<" enter b :";
-    cin>> b;
+    // cout<<" enter b :";
+    // cin>> b;
 
-    cout<<" enter c :";
-    cin>> c;
+    // cout<<" enter c :";
+    // cin>> c;
 
-    if ( a >= b && a >= c) {
-        cout << " a is largest number"<< endl;
-    } else if (b >= c) {
-        cout << " b is largest number"<< endl;
+    // if ( a >= b && a >= c) {
+    //     cout << " a is largest number"<< endl;
+    // } else if (b >= c) {
+    //     cout << " b is largest number"<< endl;
 
-    } else {
-        cout << "c is largest numbe "<< endl;
+    // } else {
+    //     cout << "c is largest numbe "<< endl;
+    // }
+
+
+
+    bool isAdult;
+    int age ;
+    cout<<"enter you age"<<endl;
+    cin>>age;
+
+    if(age >= 18){
+        isAdult = true;
+        
+    }else{
+        isAdult = false;
     }
+
+    // upar wala if else method 
+
+    // ternary operator ?
+
+    isAdult = age >= 18 ? true : false;
+
+    // Largest of 2 numbers
+
+    int a = 10;
+    int b = 5;
+
+    int largest = a >= b ? a : b;
+    cout <<"largest is"<< largest << endl;
+
+    int num = 13 ;
+
+    int isEven = num %2 == 0 ? true : false;
 
 
 
