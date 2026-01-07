@@ -172,27 +172,70 @@ int main () {
 
     // int isEven = num %2 == 0 ? true : false;
 
-    int day = 1 ;
-    cout<< "enter day :" ;
-    cin>> day;
+    // int day = 1 ;
+    // cout<< "enter day :" ;
+    // cin>> day;
 
-    switch(day) {
-        case 1: cout <<"monday" <<endl;
+    // switch(day) {
+    //     case 1: cout <<"monday" <<endl;
+    //     break;
+    //     case 2: cout << "tuesday" << endl;
+    //     break;
+    //      case 3: cout << "wednesday" << endl;
+    //     break;
+    //      case 4: cout << "thursday" << endl;
+    //     break;
+    //      case 5: cout << "friday" << endl;
+    //     break;
+    //      case 6: cout << "saturday" << endl;
+    //     break;
+    //      case 7: cout << "sunday" << endl;
+    //     break;
+    //     default: cout << "Invalid Day"<<endl;
+    // }
+
+    int a ,b ;
+    char op;
+
+     cout <<"enter a : ";
+    cin>> a;
+    cout <<"enter b  : ";
+    cin>>b;
+    cout <<"enter operator :";
+    cin>> op;
+
+    // calculator
+
+    // if (op == '+') {
+    //     cout << "a + b =" << (a+b) << endl;
+    // }else if (op == '-') {
+    //     cout << " a - b ="<< (a-b)<< endl;
+    // }else if ( op == '*') { 
+    //     cout<< " a * b = " << (a*b) << endl;
+    // } else if (op == '/') {
+    //     cout<< "a / b =" << ( a/b) << endl;
+    // } else{
+    //     cout << "Invalid operator";
+    // }
+
+    // SWITCH STATEMENT SE
+
+    switch (op) {
+        case '+' : cout << "a + b =" << (a+b)<<endl;
         break;
-        case 2: cout << "tuesday" << endl;
+        case '-': cout << "a - b ="<< (a-b) << endl;
         break;
-         case 3: cout << "wednesday" << endl;
+        case '*': cout << "a * b ="<< (a*b) << endl;
         break;
-         case 4: cout << "thursday" << endl;
+        case '/':
+        cout << "a / b = " << (a/b);
         break;
-         case 5: cout << "friday" << endl;
         break;
-         case 6: cout << "saturday" << endl;
-        break;
-         case 7: cout << "sunday" << endl;
-        break;
-        default: cout << "Invalid Day"<<endl;
+        default: cout << "invalid operator"<<endl;
     }
+        
+
+    
 
 
 
