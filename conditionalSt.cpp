@@ -194,48 +194,68 @@ int main () {
     //     default: cout << "Invalid Day"<<endl;
     // }
 
-    int a ,b ;
-    char op;
+    // int a ,b ;
+    // char op;
 
-     cout <<"enter a : ";
-    cin>> a;
-    cout <<"enter b  : ";
-    cin>>b;
-    cout <<"enter operator :";
-    cin>> op;
+    //  cout <<"enter a : ";
+    // cin>> a;
+    // cout <<"enter b  : ";
+    // cin>>b;
+    // cout <<"enter operator :";
+    // cin>> op;
 
-    // calculator
+    // // calculator
 
-    // if (op == '+') {
-    //     cout << "a + b =" << (a+b) << endl;
-    // }else if (op == '-') {
-    //     cout << " a - b ="<< (a-b)<< endl;
-    // }else if ( op == '*') { 
-    //     cout<< " a * b = " << (a*b) << endl;
-    // } else if (op == '/') {
-    //     cout<< "a / b =" << ( a/b) << endl;
-    // } else{
-    //     cout << "Invalid operator";
+    // // if (op == '+') {
+    // //     cout << "a + b =" << (a+b) << endl;
+    // // }else if (op == '-') {
+    // //     cout << " a - b ="<< (a-b)<< endl;
+    // // }else if ( op == '*') { 
+    // //     cout<< " a * b = " << (a*b) << endl;
+    // // } else if (op == '/') {
+    // //     cout<< "a / b =" << ( a/b) << endl;
+    // // } else{
+    // //     cout << "Invalid operator";
+    // // }
+
+    // // SWITCH STATEMENT SE
+
+    // switch (op) {
+    //     case '+' : cout << "a + b =" << (a+b)<<endl;
+    //     break;
+    //     case '-': cout << "a - b ="<< (a-b) << endl;
+    //     break;
+    //     case '*': cout << "a * b ="<< (a*b) << endl;
+    //     break;
+    //     case '/':
+    //     cout << "a / b = " << (a/b);
+    //     break;
+    //     break;
+    //     default: cout << "invalid operator"<<endl;
     // }
 
-    // SWITCH STATEMENT SE
-
-    switch (op) {
-        case '+' : cout << "a + b =" << (a+b)<<endl;
-        break;
-        case '-': cout << "a - b ="<< (a-b) << endl;
-        break;
-        case '*': cout << "a * b ="<< (a*b) << endl;
-        break;
-        case '/':
-        cout << "a / b = " << (a/b);
-        break;
-        break;
-        default: cout << "invalid operator"<<endl;
-    }
         
 
+        //  ASSIGMENT QS //////////////////
+
+
+    int num ;
+    cout<<"enter your number"<<endl;
+    cin>>num;
+
+    // if(num > 0) {
+    //     cout<<"num is positive"<<endl;
+
+    // }else if (num < 0 ) {
+    //     cout<<"num is negative"<<endl;
+    // } else{
+    //     cout<<" num is zero"<<endl;
+    // }
+
     
+    // TERNARY OPERTOR SE
+
+    (num > 0) ? cout<<"positive" : (num == 0) ? cout<<"ZERO" : cout<<"negative";
 
 
 
