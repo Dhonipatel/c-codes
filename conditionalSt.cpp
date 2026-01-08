@@ -239,9 +239,9 @@ int main () {
         //  ASSIGMENT QS //////////////////
 
 
-    int num ;
-    cout<<"enter your number"<<endl;
-    cin>>num;
+    // int num ;
+    // cout<<"enter your number"<<endl;
+    // cin>>num;
 
     // if(num > 0) {
     //     cout<<"num is positive"<<endl;
@@ -255,7 +255,26 @@ int main () {
     
     // TERNARY OPERTOR SE
 
-    (num > 0) ? cout<<"positive" : (num == 0) ? cout<<"ZERO" : cout<<"negative";
+    // (num > 0) ? cout<<"positive" : (num == 0) ? cout<<"ZERO" : cout<<"negative";
+
+
+
+
+
+
+    int year;
+    cout<<"enter your year "<<endl;
+    cin>>year;
+
+    if(year % 400 == 0) {
+        cout<<"leap year"<<endl;
+    } else if (year % 100 == 0) {
+        cout<<"not a leap year"<<endl;
+    } else if (year % 4 == 0) {
+        cout<< " leap year"<<endl;
+    } else {
+        cout<<"not a leap year"<<endl;
+    }
 
 
 
