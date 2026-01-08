@@ -262,18 +262,40 @@ int main () {
 
 
 
-    int year;
-    cout<<"enter your year "<<endl;
-    cin>>year;
+    // int year;
+    // cout<<"enter your year "<<endl;
+    // cin>>year;
 
-    if(year % 400 == 0) {
-        cout<<"leap year"<<endl;
-    } else if (year % 100 == 0) {
-        cout<<"not a leap year"<<endl;
-    } else if (year % 4 == 0) {
-        cout<< " leap year"<<endl;
-    } else {
-        cout<<"not a leap year"<<endl;
+    // if(year % 400 == 0) {
+    //     cout<<"leap year"<<endl;
+    // } else if (year % 100 == 0) {
+    //     cout<<"not a leap year"<<endl;
+    // } else if (year % 4 == 0) {
+    //     cout<< " leap year"<<endl;
+    // } else {
+    //     cout<<"not a leap year"<<endl;
+    // }
+
+
+    int num;
+    cout<<"enter a num :";
+    cin>>num;
+     
+    int originalNum = num;
+
+    int sum = 0 ;
+
+    while(num != 0) {
+        int a = num%10;
+        sum +=(a*a*a);
+
+        num/=10;
+    }
+
+    if (originalNum == sum) {
+        cout<<"found" << endl;
+    }else {
+        cout<<"Not a armstrong num"<<endl;
     }
 
 
