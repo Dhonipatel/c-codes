@@ -299,6 +299,31 @@ int main () {
     }
 
 
+    
+
+    int num;
+    cout<<"enter a num :";
+    cin>>num;
+     
+    int originalNum = num;
+
+    int sum = 0 ;
+
+    while(num != 0) {
+        int a = num%10;
+        sum +=(a*a*a);
+
+        num/=10;
+    }
+
+    if (originalNum == sum) {
+        cout<<"found" << endl;
+    }else {
+        cout<<"Not a armstrong num"<<endl;
+    }
+
+
+
 
     return 0;
 
