@@ -1,15 +1,17 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
+
 int main() {
-    // for(int i = 1; i <= 5; i++) {
-    //     printf("%d\n", i);
-    // }
-    // return 0;
 
-    int i = 1;
-do {
-    printf("%d\n", i);
-    i++;
-} while(i <= 5);
+    // FOR LOOPS
 
+    int num;
 
+     for(num = 1; num >=0; num++) {
+        cout<< num<< " ";
+     }
+
+     cout<< endl;
+     cout << "last value of num =" << num << endl;
+    return 0;
 }
