@@ -29,9 +29,64 @@
 // }
 // cout<<"sum = " << sum<<endl;
 
+
+
+// PRACTICE QUESTIONS 
+
+
+// for(int i = 1; i<=4; i++) {
+
+//     cout<< "****"<<endl;
+// };
+
+// int n;
+// cout<< "enter your number :";
+// cin>> n;
+
+// for(int i= n; i>=1; i--) {
+//     cout << i << " ";
+// }
+// cout<<" " <<endl;
+
+
+// int n = 10829;
+// int sum = 0;
+
+// for (int i=1; i<=n; i++) {
+//     sum +=i;
+
+//     cout<< sum << endl;
+// }
+
+//    int n = 10829;
+//     int sum = 0;
+
+//     for(int i = n; n>0; i++) {
+//         int lastDig = n %10;
+//         sum += lastDig;
+//         n =n/10;
+
+//         cout<< "sum =" <<sum<<endl;
+//     }
+
+//     return 0;
+
+
+
+
+
 //     return 0;
 // };
 
+
+
+
+
+
+
+
+
+// WHILE LOOPS
 
 #include <iostream>
 using namespace std;
@@ -51,16 +106,55 @@ int main () {
     //     i++;
     // }
 
-    int n ;
-    cout<< "enter your n = " ;
-    cin >> n;
+//     int n ;
+//     cout<< "enter your n = " ;
+//     cin >> n;
 
-    int sum = 0;
-    int i = 1;
-    while(i <= n) {
-       sum +=i;
-       cout << i << " ";
-       i++;
-    }
-    cout<< "sum = " << sum<<endl;
+//     int sum = 0;
+//     int i = 1;
+//     while(i <= n) {
+//        sum +=i;
+//        cout << i << " ";
+//        i++;
+//     }
+//     cout<< "sum = " << sum<<endl;
+
+
+
+int n = 10829;
+int digSum = 0;
+
+while(n > 0) {
+    int lastDig = n%10;
+    digSum += lastDig;
+    n = n/10;
 }
+cout<<"sum = "<<digSum<<endl;
+
+
+
+ 
+   
+
+    return 0;
+
+}
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n = 10829;
+    int sum = 0;
+
+    for (; n > 0; n = n / 10) {
+        int lastDig = n % 10;
+        sum += lastDig;
+    }
+
+    cout << "sum = " << sum << endl;
+    return 0;
+}
+
+
+
