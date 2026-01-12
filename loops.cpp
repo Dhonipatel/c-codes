@@ -78,7 +78,22 @@
 //     return 0;
 // };
 
+#include <iostream>
+using namespace std;
 
+int main() {
+    int n = 10829;
+    int sum = 0;
+
+    for (; n > 0; n = n / 10) {
+        int lastDig = n % 10;
+        sum += lastDig;
+    }
+
+    cout << "sum = " << sum << endl;
+    return 0;
+
+}
 
 
 
@@ -140,21 +155,7 @@ cout<<"sum = "<<digSum<<endl;
 
 }
 
-#include <iostream>
-using namespace std;
 
-int main() {
-    int n = 10829;
-    int sum = 0;
-
-    for (; n > 0; n = n / 10) {
-        int lastDig = n % 10;
-        sum += lastDig;
-    }
-
-    cout << "sum = " << sum << endl;
-    return 0;
-}
 
 
 
