@@ -224,15 +224,27 @@
 using namespace std;
 
 int main () {
-    int i = 1;
-    while (i <=10) {
-        if(i == 3) {
+//     int i = 1;
+//     while (i <=10) {
+//         if(i == 3) {
+//             break;
+//         }
+//         cout<<i<<endl;
+//         i++;
+//     }
+//     cout <<"out of loops now" <<endl;
+
+     int n;
+
+    do{
+        cout<<"enter number =" ;
+        cin >> n;
+        if (n %10 == 0) {
             break;
         }
-        cout<<i<<endl;
-        i++;
-    }
-    cout <<"out of loops now" <<endl;
+        cout << "you enterd " <<n<<endl;
+    }while(true);
+
     return 0;
 }
 
