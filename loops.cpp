@@ -103,10 +103,10 @@
 
 // WHILE LOOPS
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main () {
+// int main () {
 
     // int i = 1;
 
@@ -191,9 +191,9 @@ int main () {
  
    
 
-    return 0;
+//     return 0;
 
-}
+// }
 
 
 
@@ -217,6 +217,24 @@ int main () {
 //     }
 // }
 
+
+// BREAK STATEMENT 
+
+#include <iostream>
+using namespace std;
+
+int main () {
+    int i = 1;
+    while (i <=10) {
+        if(i == 3) {
+            break;
+        }
+        cout<<i<<endl;
+        i++;
+    }
+    cout <<"out of loops now" <<endl;
+    return 0;
+}
 
 
 
