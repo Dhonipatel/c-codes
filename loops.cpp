@@ -78,22 +78,22 @@
 //     return 0;
 // };
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main() {
-    int n = 10829;
-    int sum = 0;
+// int main() {
+//     int n = 10829;
+//     int sum = 0;
 
-    for (; n > 0; n = n / 10) {
-        int lastDig = n % 10;
-        sum += lastDig;
-    }
+//     for (; n > 0; n = n / 10) {
+//         int lastDig = n % 10;
+//         sum += lastDig;
+//     }
 
-    cout << "sum = " << sum << endl;
-    return 0;
+//     cout << "sum = " << sum << endl;
+//     return 0;
 
-}
+// }
 
 
 
@@ -136,15 +136,55 @@ int main () {
 
 
 
-int n = 10829;
-int digSum = 0;
+// int n = 10829;
+// int digSum = 0;
 
-while(n > 0) {
-    int lastDig = n%10;
-    digSum += lastDig;
-    n = n/10;
-}
-cout<<"sum = "<<digSum<<endl;
+// while(n > 0) {
+//     int lastDig = n%10;
+//     digSum += lastDig;
+//     n = n/10;
+// }
+// cout<<"sum = "<<digSum<<endl;
+
+
+//  only odd number sum
+// int n = 10829;
+// int digSum = 0;
+
+// while(n > 0) {
+//     int lastDig = n%10;
+//     if(lastDig % 2!= 0) {
+//         digSum += lastDig;
+//     }
+//     n = n/10;
+// }
+// cout<<"sum = "<<digSum<<endl;
+
+
+
+// int n = 10829;
+// int sum = 0;
+
+// while( n > 0) {
+//     int lastDig = n % 10;
+//     cout<< lastDig;
+//     // sum += lastDig;
+//     n /=10;
+
+// }
+
+
+// int n = 12345;
+// int res = 0;
+//  while(n > 0) {
+//     int lastDig = n %10;
+//     res = res *10 +lastDig;
+//     n /=10;
+//  }
+
+//  cout << "reverse = "<<res<< endl;
+
+
 
 
 
@@ -154,6 +194,29 @@ cout<<"sum = "<<digSum<<endl;
     return 0;
 
 }
+
+
+
+// // DO WHILE LOOPS
+
+// #include <iostream>
+// using namespace std;
+
+// int main () {
+
+//     // different between do-while loops and while loops
+
+// int val = 1;
+
+//     do {
+//         cout<<"apna college in do-while loops " << endl;
+//     } while (val > 5);
+
+//     while (val > 5) {
+//         cout<< "apna college in while loop";
+//     }
+// }
+
 
 
 
