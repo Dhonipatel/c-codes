@@ -254,38 +254,63 @@
 
 // CONTINUE STATEMENTS ///////
 
+// #include <iostream>
+// using namespace std;
+
+// int main () {
+
+//     // for(int i = 1; i<=10; i++) {
+//     //     if(i == 3){
+//     //         continue;
+//     //     }
+//     //     cout <<i<<endl;
+//     // }
+
+
+//     int n;
+
+//     do {
+//         cout<<"enter you number" ;
+//         cin>> n;
+//         if(n%10 == 0) {
+
+//             continue;
+//         }
+//         cout << "you entered = " <<n<<endl;
+
+//     }while(true);
+
+
+
+//     return 0;
+// }
+
+
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main () {
+    
 
-    // for(int i = 1; i<=10; i++) {
-    //     if(i == 3){
-    //         continue;
-    //     }
-    //     cout <<i<<endl;
-    // }
+    int n = 7;
+    int isPrime = true;
 
-
-    int n;
-
-    do {
-        cout<<"enter you number" ;
-        cin>> n;
-        if(n%10 == 0) {
-
-            continue;
+    for(int i=2; i<=n-1; i++) {
+        if(n%i == 0) { //i is a factor n; i comletely divides n; n is non-prime
+            isPrime = false;
+            break;
         }
-        cout << "you entered = " <<n<<endl;
+    }
 
-    }while(true);
-
-
-
+    if(isPrime) {
+        cout<<"number is prime" <<endl;
+    } else {
+        cout<<"number is not prime" <<endl;
+    }
+    
     return 0;
 }
-
-
 
 
 
