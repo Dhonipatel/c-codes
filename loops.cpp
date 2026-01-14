@@ -220,10 +220,10 @@
 
 // BREAK STATEMENT 
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main () {
+// int main () {
 //     int i = 1;
 //     while (i <=10) {
 //         if(i == 3) {
@@ -234,16 +234,53 @@ int main () {
 //     }
 //     cout <<"out of loops now" <<endl;
 
-     int n;
 
-    do{
-        cout<<"enter number =" ;
-        cin >> n;
-        if (n %10 == 0) {
-            break;
+// PRACTICE QUESTION
+
+//      int n;
+
+//     do{
+//         cout<<"enter number =" ;
+//         cin >> n;
+//         if (n %10 == 0) {
+//             break;
+//         }
+//         cout << "you enterd " <<n<<endl;
+//     }while(true);
+
+//     return 0;
+// }
+
+
+// CONTINUE STATEMENTS ///////
+
+#include <iostream>
+using namespace std;
+
+int main () {
+
+    // for(int i = 1; i<=10; i++) {
+    //     if(i == 3){
+    //         continue;
+    //     }
+    //     cout <<i<<endl;
+    // }
+
+
+    int n;
+
+    do {
+        cout<<"enter you number" ;
+        cin>> n;
+        if(n%10 == 0) {
+
+            continue;
         }
-        cout << "you enterd " <<n<<endl;
+        cout << "you entered = " <<n<<endl;
+
     }while(true);
+
+
 
     return 0;
 }
