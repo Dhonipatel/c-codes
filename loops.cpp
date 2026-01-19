@@ -337,18 +337,64 @@ using namespace std;
 int main () {
 
 
-    int n;
-    cin>>n;
+    // GEEKSFORGEEKS
 
-    int answer =1;
+    // DSA QUESTION
+    ////////////  GIVEN A POSTIVE INTEGER N. FIND THE  FACTORIAL OF N
 
-    for(int i =1; i<=n; i++) {
-        answer *=i;
-    }
 
-    cout<<answer;
+    // int n;
+    // cin>>n;
+
+    // int answer =1;
+
+    // for(int i =1; i<=n; i++) {
+    //     answer *=i;
+    // }
+
+    // cout<<answer;
+
+
+
+    // LEETCODE QUESTION /////////////////
+
+
+        // FIBONACCI NUMBER /////
+
+// The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1. That is,
+
+// F(0) = 0, F(1) = 1
+// F(n) = F(n - 1) + F(n - 2), for n > 1.
+// Given n, calculate F(n).
+
+
+int n =6;
+
+if (n == 0) return 0;
+
+if (n == 1) return 1;
+
+int answer = 0;
+int p1 = 1;
+int p2 = 0;
+
+for (int i = 2; i<=n; i++) {
+    answer= p1 + p2;
+    p2 = p1;
+    p1 = answer;
+}
+cout<< answer;
+
+ 
+
+
+
+
+
 
     return 0;
+
+
 
 
 
