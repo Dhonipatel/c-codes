@@ -43,6 +43,22 @@ int main () {
 
 
 
+  
+// calculator
+
+    if (op == '+') {
+        cout << "a + b =" << (a+b) << endl;
+    }else if (op == '-') {
+        cout << " a - b ="<< (a-b)<< endl;
+    }else if ( op == '*') { 
+        cout<< " a * b = " << (a*b) << endl;
+    } else if (op == '/') {
+        cout<< "a / b =" << ( a/b) << endl;
+    } else{
+        cout << "Invalid operator";
+    }
+
+
 
 
 
