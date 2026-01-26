@@ -26,67 +26,67 @@
 
 // LIVE SESSION Qs 
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main () {
-  // int b = 5;
-  // int c = --b;
+// int main () {
+//   // int b = 5;
+//   // int c = --b;
 
-  // int x = 'a' + b++ - c;
+//   // int x = 'a' + b++ - c;
  
-  // cout<<b<< " " <<c<<" "<<x<<endl;
+//   // cout<<b<< " " <<c<<" "<<x<<endl;
 
-  int b = 5;
-  int x = ++b + b++;
-  cout<<b<< " " <<x<<endl;
+//   int b = 5;
+//   int x = ++b + b++;
+//   cout<<b<< " " <<x<<endl;
 
 
 
   
-// calculator
+// // calculator
 
-    if (op == '+') {
-        cout << "a + b =" << (a+b) << endl;
-    }else if (op == '-') {
-        cout << " a - b ="<< (a-b)<< endl;
-    }else if ( op == '*') { 
-        cout<< " a * b = " << (a*b) << endl;
-    } else if (op == '/') {
-        cout<< "a / b =" << ( a/b) << endl;
-    } else{
-        cout << "Invalid operator";
-    }
-
-
-
-int n = 4;
-for(int i = 1; i <= n; i++) {
-    // spaces
-    for(int s = 1; s <= n - i; s++) {
-        cout << " ";
-    }
-    // stars
-    for(int j = 1; j <= i; j++) {
-        cout << "* ";
-    }
-    cout << endl;
-}
+//     if (op == '+') {
+//         cout << "a + b =" << (a+b) << endl;
+//     }else if (op == '-') {
+//         cout << " a - b ="<< (a-b)<< endl;
+//     }else if ( op == '*') { 
+//         cout<< " a * b = " << (a*b) << endl;
+//     } else if (op == '/') {
+//         cout<< "a / b =" << ( a/b) << endl;
+//     } else{
+//         cout << "Invalid operator";
+//     }
 
 
 
-int n = 4;
-int num = 1;
-for(int i = 1; i <= n; i++) {
-    for(int j = 1; j <= i; j++) {
-        cout << num << " ";
-        num++;
-    }
-    cout << endl;
-}
+// int n = 4;
+// for(int i = 1; i <= n; i++) {
+//     // spaces
+//     for(int s = 1; s <= n - i; s++) {
+//         cout << " ";
+//     }
+//     // stars
+//     for(int j = 1; j <= i; j++) {
+//         cout << "* ";
+//     }
+//     cout << endl;
+// }
+
+
+
+// int n = 4;
+// int num = 1;
+// for(int i = 1; i <= n; i++) {
+//     for(int j = 1; j <= i; j++) {
+//         cout << num << " ";
+//         num++;
+//     }
+//     cout << endl;
+// }
 
 
 
 
-    return 0;
-}
+//     return 0;
+// }
