@@ -91,46 +91,55 @@
 //     return 0;
 // }
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main() {
-    int arr[5] = {2, 9, 1, 7, 5};
-    int max = arr[0];
+// int main() {
+//     int arr[5] = {2, 9, 1, 7, 5};
+//     int max = arr[0];
 
-    for(int i = 1; i < 5; i++) {
-        if(arr[i] > max)
-            max = arr[i];
+//     for(int i = 1; i < 5; i++) {
+//         if(arr[i] > max)
+//             max = arr[i];
+//     }
+
+//     cout << "Largest = " << max;
+//     return 0;
+// }
+
+
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int arr[] = {2, 7, 11, 15};
+//     int n = 4;
+//     int target = 9;
+//     bool found = false;
+
+//     for(int i = 0; i < n; i++) {
+//         for(int j = i + 1; j < n; j++) {
+//             if(arr[i] + arr[j] == target) {
+//                 cout << "Pair found: " << arr[i] << " + " << arr[j];
+//                 found = true;
+//                 break;
+//             }
+//         }
+//         if(found) break;
+//     }
+
+//     if(!found)
+//         cout << "No pair found";
+
+//     return 0;
+// }
+
+
+int n = 4;
+for(int i = 1; i <= n; i++) {
+    for(int j = 1; j <= i; j++) {
+        cout << "* ";
     }
-
-    cout << "Largest = " << max;
-    return 0;
-}
-
-
-#include <iostream>
-using namespace std;
-
-int main() {
-    int arr[] = {2, 7, 11, 15};
-    int n = 4;
-    int target = 9;
-    bool found = false;
-
-    for(int i = 0; i < n; i++) {
-        for(int j = i + 1; j < n; j++) {
-            if(arr[i] + arr[j] == target) {
-                cout << "Pair found: " << arr[i] << " + " << arr[j];
-                found = true;
-                break;
-            }
-        }
-        if(found) break;
-    }
-
-    if(!found)
-        cout << "No pair found";
-
-    return 0;
+    cout << endl;
 }
 
