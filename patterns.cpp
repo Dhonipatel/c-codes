@@ -40,11 +40,22 @@ int main() {
    
 //PRINT HALF PYRAMID PETTERN
 
-int  n =5;
+// int  n =5;
 
-for (int i=1; i<=n; i++) {
+// for (int i=1; i<=n; i++) {
+//     for(int j=1; j<=i; j++) {
+//         cout<< j ;
+//     }
+//     cout<<endl;
+// }
+
+int n = 6;
+char ch = 'A';
+
+for(int i =1; i<=n; i++) {
     for(int j=1; j<=i; j++) {
-        cout<< j ;
+        cout << ch;
+        ch++;
     }
     cout<<endl;
 }
