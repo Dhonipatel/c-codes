@@ -60,22 +60,36 @@ int main() {
 //     cout<<endl;
 // }
 
-int n= 6;
+// int n= 6;
+
+// for(int i=1; i<=n; i++) {
+//     cout<<"*"; //First
+//     for(int j=1; j<=n-1; j++) {
+//         if(i==1 || i ==n ) {
+//             cout<<"*";
+//         }else {
+//             cout<<" ";
+//         }
+//     }
+//     cout<<"*"<< endl;//Last
+// }
+
+
+//     return 0;
+
+int n =8;
 
 for(int i=1; i<=n; i++) {
-    cout<<"*"; //First
-    for(int j=1; j<=n-1; j++) {
-        if(i==1 || i ==n ) {
-            cout<<"*";
-        }else {
-            cout<<" ";
-        }
+    // space
+    for(int j=1; j<=n-i; j++) {
+        cout<<" ";
     }
-    cout<<"*"<< endl;//Last
+
+    for(int j=1; j<=i; j++) {
+        cout<<"*";
+    }
+    cout<< endl;
 }
-
-
-    return 0;
 
 
 }
