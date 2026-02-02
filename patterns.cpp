@@ -49,15 +49,29 @@ int main() {
 //     cout<<endl;
 // }
 
-int n = 6;
-char ch = 'A';
+// int n = 6;
+// char ch = 'A';
 
-for(int i =1; i<=n; i++) {
-    for(int j=1; j<=i; j++) {
-        cout << ch;
-        ch++;
+// for(int i =1; i<=n; i++) {
+//     for(int j=1; j<=i; j++) {
+//         cout << ch;
+//         ch++;
+//     }
+//     cout<<endl;
+// }
+
+int n= 6;
+
+for(int i=1; i<=n; i++) {
+    cout<<"*"; //First
+    for(int j=1; j<=n-1; j++) {
+        if(i==1 || i ==n ) {
+            cout<<"*";
+        }else {
+            cout<<" ";
+        }
     }
-    cout<<endl;
+    cout<<"*"<< endl;//Last
 }
 
 
