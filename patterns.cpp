@@ -75,21 +75,36 @@ int main() {
 // }
 
 
-//     return 0;
 
-int n =8;
+
+// int n =8;
+
+// for(int i=1; i<=n; i++) {
+//     // space
+//     for(int j=1; j<=n-i; j++) {
+//         cout<<" ";
+//     }
+
+//     for(int j=1; j<=i; j++) {
+//         cout<<"*";
+//     }
+//     cout<< endl;
+// }
+
+
+int n=4;
+int num=1;
 
 for(int i=1; i<=n; i++) {
-    // space
-    for(int j=1; j<=n-i; j++) {
-        cout<<" ";
-    }
-
     for(int j=1; j<=i; j++) {
-        cout<<"*";
+        cout<<num++ <<" ";
+     
     }
-    cout<< endl;
+    cout<<endl;
 }
 
+
+
+    return 0;
 
 }
