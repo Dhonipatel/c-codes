@@ -173,20 +173,32 @@ int main() {
 // }
  
 
-    int rows = 5;
-    int cols = 10;
+//     int rows = 5;
+//     int cols = 10;
 
-    for(int i = 1; i <= rows; i++) {
-        for(int j = 1; j <= cols; j++) {
-            if(i == 1 || i == rows || j == 1 || j == cols) {
-                cout << "*";
-            } else {
-                cout << " ";
-            }
-        }
-        cout << endl;
+//     for(int i = 1; i <= rows; i++) {
+//         for(int j = 1; j <= cols; j++) {
+//             if(i == 1 || i == rows || j == 1 || j == cols) {
+//                 cout << "*";
+//             } else {
+//                 cout << " ";
+//             }
+//         }
+//         cout << endl;
   
+// }
+
+
+int n=5;
+
+for(int i=1; i<=n; i++) {
+    for(int j=1; j<=n-i; j++) {
+        cout<<"*";
+    }
+    cout<<endl;
 }
+
+
 
 
 
