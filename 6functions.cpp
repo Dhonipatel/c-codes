@@ -90,31 +90,56 @@
 
 
 
-// PRACTICE QEUSTION
+// // PRACTICE QEUSTION
+
+
+// #include <iostream>
+// using namespace std;
+
+// int factorial (int n) {
+//     int fact = 1;
+//     for(int i = 1; i<=n; i++) {
+//         fact = fact*i;
+//     }
+//     cout <<"factorial ("<< n <<") =" << fact <<endl;
+//     return fact;
+// }
+
+// int main () {
+
+
+//     factorial(0);
+//     factorial(1);
+//     factorial(2);
+//     factorial(3);
+//     factorial(4);
+//     factorial(5);
+//     factorial(6);
+
+//     return 0;
+// }
+
 
 
 #include <iostream>
 using namespace std;
 
-int factorial (int n) {
-    int fact = 1;
-    for(int i = 1; i<=n; i++) {
-        fact = fact*i;
+bool isPrime(int n) {
+    if(n == 1) {
+        return false;
     }
-    cout <<"factorial ("<< n <<") =" << fact <<endl;
-    return fact;
+
+    for(int i =2; i<=n-1; i++){
+        if(n %i == 0) // non prime
+        return false;
+    }
+    return true;
 }
 
 int main () {
 
+    cout<< isPrime(22) <<endl;
 
-    factorial(0);
-    factorial(1);
-    factorial(2);
-    factorial(3);
-    factorial(4);
-    factorial(5);
-    factorial(6);
 
     return 0;
 }
