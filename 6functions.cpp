@@ -121,25 +121,54 @@
 
 
 
+// #include <iostream>
+// using namespace std;
+
+// bool isPrime(int n) {
+//     if(n == 1) {
+//         return false;
+//     }
+
+//     for(int i =2; i<=n-1; i++){
+//         if(n %i == 0) // non prime
+//         return false;
+//     }
+//     return true;
+// }
+
+// int main () {
+
+//     cout<< isPrime(22) <<endl;
+
+
+//     return 0;
+// }
+
+
 #include <iostream>
 using namespace std;
 
-bool isPrime(int n) {
-    if(n == 1) {
-        return false;
-    }
+int factorial (int n) {
+    int fact = 1;
+    for(int i=1; i<=n; i++) {
+        fact *=i;
 
-    for(int i =2; i<=n-1; i++){
-        if(n %i == 0) // non prime
-        return false;
     }
-    return true;
+    return fact;
 }
 
-int main () {
+int binCoff(int n, int r) {
+    int val1 = factorial(n);
+    int val2 = factorial(r);
+    int val3 = factorial(n-r);
 
-    cout<< isPrime(22) <<endl;
+    int result = val1 /(val2* val3);
+}
 
+
+int main() {
+
+cout << binCoff(4, 2) <<endl;
 
     return 0;
 }
