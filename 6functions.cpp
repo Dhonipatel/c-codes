@@ -20,6 +20,10 @@
 // }
 
 
+
+// PRACTICE QUESTIONS
+
+
 // #include <iostream>
 // using namespace std;
 
@@ -48,35 +52,69 @@
 
 
 
+//PRACTICE QEUTIONS 
+
+
+// #include <iostream>
+// using namespace std;
+
+// int mul (int a, int b  ) {
+//     int mul = a * b;
+//     return mul;
+
+// }
+
+// // even --> true odd --> false
+
+// int isEven(int n) {
+//     if(n %2 ==0) {
+//         return true;
+//     } else{
+//         return false;
+//     }
+// }
+
+
+
+// int main () {
+
+// int m = mul(4 , 5);// 4 5 are argumernts
+// cout<< "mul  " <<m << endl;
+
+// cout<< isEven(6);
+
+//     return 0;
+// }
+
+
+
+
+
+// PRACTICE QEUSTION
+
+
 #include <iostream>
 using namespace std;
 
-int mul (int a, int b  ) {
-    int mul = a * b;
-    return mul;
-
-}
-
-// even --> true odd --> false
-
-int isEven(int n) {
-    if(n %2 ==0) {
-        return true;
-    } else{
-        return false;
+int factorial (int n) {
+    int fact = 1;
+    for(int i = 1; i<=n; i++) {
+        fact = fact*i;
     }
+    cout <<"factorial ("<< n <<") =" << fact <<endl;
+    return fact;
 }
-
-
 
 int main () {
 
-int m = mul(4 , 5);// 4 5 are argumernts
-cout<< "mul  " <<m << endl;
 
-cout<< isEven(6);
+    factorial(0);
+    factorial(1);
+    factorial(2);
+    factorial(3);
+    factorial(4);
+    factorial(5);
+    factorial(6);
 
     return 0;
 }
-
-
