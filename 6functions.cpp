@@ -145,30 +145,64 @@
 // }
 
 
+// #include <iostream>
+// using namespace std;
+
+// int factorial (int n) {
+//     int fact = 1;
+//     for(int i=1; i<=n; i++) {
+//         fact *=i;
+
+//     }
+//     return fact;
+// }
+
+// int binCoff(int n, int r) {
+//     int val1 = factorial(n);
+//     int val2 = factorial(r);
+//     int val3 = factorial(n-r);
+
+//     int result = val1 /(val2* val3);
+// }
+
+
+// int main() {
+
+// cout << binCoff(4, 2) <<endl;
+
+
+
+
+//     return 0;
+// }
+
+
 #include <iostream>
 using namespace std;
 
-int factorial (int n) {
-    int fact = 1;
-    for(int i=1; i<=n; i++) {
-        fact *=i;
-
-    }
-    return fact;
+ int sum (int a, int b) {
+    cout<< (a+b) <<endl;
+    return a+b;
 }
 
-int binCoff(int n, int r) {
-    int val1 = factorial(n);
-    int val2 = factorial(r);
-    int val3 = factorial(n-r);
 
-    int result = val1 /(val2* val3);
+double sum (double a, double b) {
+    cout<< (a + b) <<endl;
+    return a + b;
+}
+
+int sum (int a, int b, int c) {
+    cout <<(a+b+c) <<endl;
+    return a + b + c;
 }
 
 
 int main() {
 
-cout << binCoff(4, 2) <<endl;
+    sum(2, 3);
+    sum(12 , 13);
+    sum(1.5, 2.5);
+    sum(1, 2, 3);
 
     return 0;
 }
