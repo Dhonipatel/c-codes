@@ -208,47 +208,78 @@
 // }
 
 
+// #include <iostream>
+// using namespace std;
+
+// bool isPrime(int n) {
+//     if(n==1) {
+//         return false;
+//     }
+
+//     for(int i=2; i*i<=n; i++) {
+//         if(n% i == 0) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// void allPrimes(int n) {
+//     //all primes --> from 2 to n
+//     for(int i=2; i<=n; i++) {
+//         if(isPrime(i)) {
+//             cout<<i<< " ";
+//         }
+//     }
+// }
+
+// int main (){
+
+//     allPrimes(50);
+
+
+
+//     return 0;
+// }
+
+
+
+// LIVE SSESSION .///////////////
+
+
 #include <iostream>
 using namespace std;
 
-bool isPrime(int n) {
-    if(n==1) {
+//write a function to check if a  given number is palidrome 
+
+bool isPalindrome (int num) {
+    int temp = num;
+    int rev = 0;
+    while(num >0) {
+        int d = num %10;
+        rev = rev*10+d;
+        num = num / 10;
+    }
+
+    if (temp == rev) {
+        return true;
+    } else {
         return false;
     }
-
-    for(int i=2; i*i<=n; i++) {
-        if(n% i == 0) {
-            return false;
-        }
-    }
-    return true;
 }
-
-void allPrimes(int n) {
-    //all primes --> from 2 to n
-    for(int i=2; i<=n; i++) {
-        if(isPrime(i)) {
-            cout<<i<< " ";
-        }
-    }
-}
-
-int main (){
-
-    allPrimes(50);
-
-
-
-    return 0;
-}
-
-
-
-#include <iostream>
-using namespace std;
-
 
 
 int main () {
+
+    int num ;
+    // cin>> num;
+
+    bool result = isPalindrome(1123);
+    cout<< result << endl;
+    bool result2 = isPalindrome(121);
+    cout << result2 << endl;
+
+   
+    
     return 0;
 }
