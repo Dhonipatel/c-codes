@@ -325,16 +325,44 @@
 
 // write a function which take to number as  parameter (a & b) and output  ; a^2+b^2+2*ab
 
+// #include <iostream>
+// using namespace std;
+
+// int abSquare (int a, int b ){
+//     return a*a + b*b + 2*a*b;
+// }
+
+
+// int main () {
+// int result = abSquare(1,3);
+// cout << result << endl;
+
+//     return 0;
+// }
+
+
+
+
+// WRIITE A  FUNCTION TO THAT PRINTS THE LARGEST OF 3 NUMBERS;
+
+
 #include <iostream>
 using namespace std;
 
-int abSquare (int a, int b ){
-    return a*a + b*b + 2*a*b;
+int largest (int a, int b, int c) {
+    if(a >= b && a >= c) {
+        return a;
+    } else if( b>= a && b >= c) {
+        return b;
+     } else {
+        return c;
+     }
 }
 
-int main () {
-int result = abSquare(5 ,6);
-cout << result << endl;
+int main() {
 
+    int lar = largest (20 , 30 , 79);
+    cout << lar << endl;
+    
     return 0;
 }
