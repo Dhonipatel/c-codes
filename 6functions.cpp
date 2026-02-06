@@ -346,23 +346,49 @@
 // WRIITE A  FUNCTION TO THAT PRINTS THE LARGEST OF 3 NUMBERS;
 
 
-#include <iostream>
+// #include <iostream>
+// using namespace std;
+
+// int largest (int a, int b, int c) {
+//     if(a >= b && a >= c) {
+//         return a;
+//     } else if( b>= a && b >= c) {
+//         return b;
+//      } else {
+//         return c;
+//      }
+// }
+
+// int main() {
+
+//     int lar = largest (20 , 30 , 79);
+//     cout << lar << endl;
+    
+//     return 0;
+// }
+
+
+
+// WRITE  A FUNCTION TO ACCEPT CHARACTER AND RETURN CHARACTER THAT APPEAR AFTER IT CH ="B"
+
+
+#include <iostream> 
 using namespace std;
 
-int largest (int a, int b, int c) {
-    if(a >= b && a >= c) {
-        return a;
-    } else if( b>= a && b >= c) {
-        return b;
-     } else {
-        return c;
-     }
+char nextChar (char ch) {
+    if (ch == 'z') 
+    return 'a';
+
+    else 
+    return (char)(ch + 1);
 }
 
-int main() {
 
-    int lar = largest (20 , 30 , 79);
-    cout << lar << endl;
-    
-    return 0;
+int main () {
+
+    char ch1 = nextChar('c');
+    cout << ch1 <<endl;
+    char ch2 = nextChar('z');
+    cout << ch2 << endl;
+
 }
