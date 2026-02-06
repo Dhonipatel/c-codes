@@ -244,7 +244,10 @@
 
 
 
-// LIVE SSESSION .///////////////
+// LIVE SSESSION  WITH ASSIGMENTS QUESTION SOLVE.///////////////
+
+
+// //write a function to check if a  given number is palidrome 
 
 
 // #include <iostream>
@@ -286,30 +289,52 @@
 
 
 
+// write a function to calculate sum of digit  of a number 
+
+
+// #include <iostream>
+// using namespace std;
+
+
+// int sumofDigits(int n) {
+//     int res = 0;
+
+//     while(n > 0) {
+//         // res += n % 10;
+//         int d = n % 10;
+//         res = res + d;
+//         n = n / 10;
+
+        
+//     }
+//     return res;
+// }
+
+// int main () {
+
+//     int sum = sumofDigits(1234);
+//     cout <<sum << endl;
+
+
+//     return 0;
+// }
+
+
+
+
+
+// write a function which take to number as  parameter (a & b) and output  ; a^2+b^2+2*ab
+
 #include <iostream>
 using namespace std;
 
-// write a function to calculate sum of digit  of a number 
-
-int sumofDigits(int n) {
-    int res = 0;
-
-    while(n > 0) {
-        // res += n % 10;
-        int d = n % 10;
-        res = res + d;
-        n = n / 10;
-        
-        
-    }
-    return res;
+int abSquare (int a, int b ){
+    return a*a + b*b + 2*a*b;
 }
 
 int main () {
-
-    int sum = sumofDigits(1234);
-    cout <<sum << endl;
-
+int result = abSquare(5 ,6);
+cout << result << endl;
 
     return 0;
 }
