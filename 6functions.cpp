@@ -177,32 +177,78 @@
 // }
 
 
+// #include <iostream>
+// using namespace std;
+
+//  int sum (int a, int b) {
+//     cout<< (a+b) <<endl;
+//     return a+b;
+// }
+
+
+// double sum (double a, double b) {
+//     cout<< (a + b) <<endl;
+//     return a + b;
+// }
+
+// int sum (int a, int b, int c) {
+//     cout <<(a+b+c) <<endl;
+//     return a + b + c;
+// }
+
+
+// int main() {
+
+//     sum(2, 3);
+//     sum(12 , 13);
+//     sum(1.5, 2.5);
+//     sum(1, 2, 3);
+
+//     return 0;
+// }
+
+
 #include <iostream>
 using namespace std;
 
- int sum (int a, int b) {
-    cout<< (a+b) <<endl;
-    return a+b;
+bool isPrime(int n) {
+    if(n==1) {
+        return false;
+    }
+
+    for(int i=2; i*i<=n; i++) {
+        if(n% i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+void allPrimes(int n) {
+    //all primes --> from 2 to n
+    for(int i=2; i<=n; i++) {
+        if(isPrime(i)) {
+            cout<<i<< " ";
+        }
+    }
+}
+
+int main (){
+
+    allPrimes(50);
+
+
+
+    return 0;
 }
 
 
-double sum (double a, double b) {
-    cout<< (a + b) <<endl;
-    return a + b;
-}
 
-int sum (int a, int b, int c) {
-    cout <<(a+b+c) <<endl;
-    return a + b + c;
-}
+#include <iostream>
+using namespace std;
 
 
-int main() {
 
-    sum(2, 3);
-    sum(12 , 13);
-    sum(1.5, 2.5);
-    sum(1, 2, 3);
-
+int main () {
     return 0;
 }
