@@ -247,39 +247,69 @@
 // LIVE SSESSION .///////////////
 
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-//write a function to check if a  given number is palidrome 
+// //write a function to check if a  given number is palidrome 
 
-bool isPalindrome (int num) {
-    int temp = num;
-    int rev = 0;
-    while(num >0) {
-        int d = num %10;
-        rev = rev*10+d;
-        num = num / 10;
-    }
+// bool isPalindrome (int num) {
+//     int temp = num;
+//     int rev = 0;
+//     while(num >0) {
+//         int d = num %10;
+//         rev = rev*10+d;
+//         num = num / 10;
+//     }
 
-    if (temp == rev) {
-        return true;
-    } else {
-        return false;
-    }
-}
+//     if (temp == rev) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
 
 
-int main () {
+// int main () {
 
-    int num ;
-    // cin>> num;
+//     int num ;
+//     // cin>> num;
 
-    bool result = isPalindrome(1123);
-    cout<< result << endl;
-    bool result2 = isPalindrome(121);
-    cout << result2 << endl;
+//     bool result = isPalindrome(1123);
+//     cout<< result << endl;
+//     bool result2 = isPalindrome(121);
+//     cout << result2 << endl;
 
    
     
+//     return 0;
+// }
+
+
+
+#include <iostream>
+using namespace std;
+
+// write a function to calculate sum of digit  of a number 
+
+int sumofDigits(int n) {
+    int res = 0;
+
+    while(n > 0) {
+        // res += n % 10;
+        int d = n % 10;
+        res = res + d;
+        n = n / 10;
+        
+        
+    }
+    return res;
+}
+
+int main () {
+
+    int sum = sumofDigits(1234);
+    cout <<sum << endl;
+
+
     return 0;
 }
