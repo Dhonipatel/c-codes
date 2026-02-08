@@ -414,25 +414,50 @@
 
 
 
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int fuel[] = {4, 6, 3};
+//     int dist[] = {3, 5, 4};
+//     int n = 3;
+
+//     int totalFuel = 0, totalDist = 0;
+
+//     for(int i = 0; i < n; i++) {
+//         totalFuel += fuel[i];
+//         totalDist += dist[i];
+//     }
+
+//     if(totalFuel >= totalDist)
+//         cout << "YES - Trip possible";
+//     else
+//         cout << "NO - Trip not possible";
+
+//     return 0;
+// }
+
+
+
+
+
+
+
 #include <iostream>
 using namespace std;
 
 int main() {
-    int fuel[] = {4, 6, 3};
-    int dist[] = {3, 5, 4};
-    int n = 3;
+    int arr[] = {1, 3, 2, 4, 1};
+    int n = 5;
+    int count = 0;
 
-    int totalFuel = 0, totalDist = 0;
-
-    for(int i = 0; i < n; i++) {
-        totalFuel += fuel[i];
-        totalDist += dist[i];
+    for(int i = 1; i < n-1; i++) {
+        if(arr[i] > arr[i-1] && arr[i] > arr[i+1]) {
+            count++;
+        }
     }
 
-    if(totalFuel >= totalDist)
-        cout << "YES - Trip possible";
-    else
-        cout << "NO - Trip not possible";
+    cout << "Number of scenic peaks = " << count;
 
     return 0;
 }
