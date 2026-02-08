@@ -443,21 +443,25 @@
 
 
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main() {
-    int arr[] = {1, 3, 2, 4, 1};
-    int n = 5;
-    int count = 0;
+// int main() {
+//     int arr[] = {1, 3, 2, 4, 1};
+//     int n = 5;
+//     int count = 0;
 
-    for(int i = 1; i < n-1; i++) {
-        if(arr[i] > arr[i-1] && arr[i] > arr[i+1]) {
-            count++;
-        }
-    }
+//     for(int i = 1; i < n-1; i++) {
+//         if(arr[i] > arr[i-1] && arr[i] > arr[i+1]) {
+//             count++;
+//         }
+//     }
 
-    cout << "Number of scenic peaks = " << count;
+//     cout << "Number of scenic peaks = " << count;
 
-    return 0;
-}
+//     return 0;
+// }
+
+
+
+
