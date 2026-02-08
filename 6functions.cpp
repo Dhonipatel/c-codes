@@ -374,23 +374,65 @@
 // WRITE  A FUNCTION TO ACCEPT CHARACTER AND RETURN CHARACTER THAT APPEAR AFTER IT CH ="B"
 
 
-#include <iostream> 
+// #include <iostream> 
+// using namespace std;
+
+// char nextChar (char ch) {
+//     if (ch == 'z') 
+//     return 'a';
+
+//     else 
+//     return (char)(ch + 1);
+// }
+
+
+// int main () {
+
+//     char ch1 = nextChar('c');
+//     cout << ch1 <<endl;
+//     char ch2 = nextChar('z');
+//     cout << ch2 << endl;
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <iostream>
 using namespace std;
 
-char nextChar (char ch) {
-    if (ch == 'z') 
-    return 'a';
+int main() {
+    int fuel[] = {4, 6, 3};
+    int dist[] = {3, 5, 4};
+    int n = 3;
 
-    else 
-    return (char)(ch + 1);
-}
+    int totalFuel = 0, totalDist = 0;
 
+    for(int i = 0; i < n; i++) {
+        totalFuel += fuel[i];
+        totalDist += dist[i];
+    }
 
-int main () {
+    if(totalFuel >= totalDist)
+        cout << "YES - Trip possible";
+    else
+        cout << "NO - Trip not possible";
 
-    char ch1 = nextChar('c');
-    cout << ch1 <<endl;
-    char ch2 = nextChar('z');
-    cout << ch2 << endl;
-
+    return 0;
 }
