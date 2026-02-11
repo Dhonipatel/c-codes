@@ -17,9 +17,30 @@ void binToDec(int binNum) {
     cout << decNum <<endl;
 }
 
+void decToBin (int decNum) {
+    int n = decNum;
+    int pow = 1;
+    int binNum = 0;
+
+    while( n > 0) {
+        int rem = n % 2;
+        binNum += rem *pow;
+
+        n = n/2;
+
+        pow = pow *10;
+    } 
+     cout << "binary of " << decNum <<" = " << binNum <<endl;
+}
+
+
+
 int main() {
+    decToBin(37);
 
     binToDec(101);
+
+
 
     // cout << sizeof(int) << endl;
     // cout<< sizeof(long int ) << endl;
