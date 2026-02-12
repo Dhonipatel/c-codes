@@ -127,3 +127,27 @@
 //     return 0;
 // }
 
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[] = {4, 5, 2, 8};
+    int n = 4;
+
+    for(int i = 0; i < n; i++) {
+        int ans = -1;
+
+        for(int j = i-1; j >= 0; j--) {
+            if(arr[j] < arr[i]) {
+                ans = arr[j];
+                break;
+            }
+        }
+
+        cout << ans << " ";
+    }
+
+    return 0;
+}
