@@ -56,98 +56,35 @@
 //     return 0;
 // }
 
+// 
 
 
-// #include <unordered_map>
-// using namespace std;
-
-// vector<int> twoSum(vector<int>& nums, int target) {
-//     unordered_map<int, int> mp;
-
-//     for(int i = 0; i < nums.size(); i++) {
-//         int need = target - nums[i];
-
-//         if(mp.find(need) != mp.end()) {
-//             return {mp[need], i};
-//         }
-
-//         mp[nums[i]] = i;
-//     }
-
-//     return {};
-// }
-
-
-
-
-
-// #include <unordered_map>
-// using namespace std;
-
-// vector<int> twoSum(vector<int>& nums, int target) {
-//     unordered_map<int, int> mp;
-
-//     for(int i = 0; i < nums.size(); i++) {
-//         int need = target - nums[i];
-
-//         if(mp.find(need) != mp.end()) {
-//             return {mp[need], i};
-//         }
-
-//         mp[nums[i]] = i;
-//     }
-
-//     return {};
-// }
-
-
-
-// #include <iostream>
-// #include <stack>
-// using namespace std;
-
-// int main() {
-//     int arr[] = {4, 5, 2, 8};
-//     int n = 4;
-//     stack<int> st;
-
-//     for(int i = 0; i < n; i++) {
-
-//         while(!st.empty() && st.top() >= arr[i])
-//             st.pop();
-
-//         if(st.empty())
-//             cout << -1 << " ";
-//         else
-//             cout << st.top() << " ";
-
-//         st.push(arr[i]);
-//     }
-
-//     return 0;
-// }
-
-
-
-#include <iostream>
+#include <iostream> 
 using namespace std;
 
-int main() {
-    int arr[] = {4, 5, 2, 8};
-    int n = 4;
+int binToDec(string binary_num) {
+    int num = 0;
+    int n = binary_num.size();
+    int pow_2 = 1;
 
-    for(int i = 0; i < n; i++) {
-        int ans = -1;
-
-        for(int j = i-1; j >= 0; j--) {
-            if(arr[j] < arr[i]) {
-                ans = arr[j];
-                break;
-            }
+    for(int i= n-1; i>=0; i--) {
+        if(binary_num[i] == '1') {
+            num += pow_2;
         }
-
-        cout << ans << " ";
+        return num;
     }
-
-    return 0;
 }
+
+int main () {
+
+string binary_num = "100101";
+int num = binToDec(binary_num);
+
+cout<<num;
+
+return 0;
+
+}
+
+
+
