@@ -75,28 +75,33 @@ int binToDec(string binary_num) {
     }
 }
 
-int main () {
 
-string binary_num = "100101";
-int num = binToDec(binary_num);
+string decimalToBinary(int num) {
+    string binaryNum = "";
 
-cout<<num;
+    while(num != 0) {
+        if(num %2 == 1) {
+            binaryNum  = "1" +binaryNum;
+        }else{
+            binaryNum = "0" + binaryNum;
 
+        }
 
-
-
-int n = 4;
-int num = 1;
-for(int i = 1; i <= n; i++) {
-    for(int j = 1; j <= i; j++) {
-        cout << num << " ";
-        num++;
+        num /=2;
     }
-    cout << endl;
+    return binaryNum;
 }
 
+int main () {
 
-return 0;
+// string binary_num = "100101";
+// int num = binToDec(binary_num);
+// cout<<num;
+
+
+int num = 13;
+string binaryNumber = decimalToBinary(num);
+ cout<<binaryNumber;
 
 }
 
