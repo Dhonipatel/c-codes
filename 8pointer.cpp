@@ -29,17 +29,75 @@
 #include <iostream>
 using namespace std;
 
+//  int changeA(int num) {
+//     int a = 20;
+//     cout<< a << endl;
+//  }
+
+
+//pass by reference using pointer
+
+// int changeA( int *ptr) {
+//     *ptr = 20;
+//     cout << *ptr << endl;
+// }
+
+
+
+void changeA(int &param) {
+    param = 20;
+    cout << param << "\n";
+}
+
 int main () {
 
-    int a = 10;
-    int *ptr = &a;
+    // int a = 10;
+    // int *ptr = &a;
 
-    cout << ptr <<"\n";
-    cout << *ptr <<"\n";
+    // cout << ptr <<"\n";
+    // cout << *ptr <<"\n";
 
-    *ptr = 20;
+    // *ptr = 20;
 
-    cout << a <<"\n";
+    // cout << a <<"\n";
+
+
+    // //// NULL POINTER
+
+    // int *ptr = NULL;
+
+    // cout << ptr << "\n";
+    
+    // cout<< *ptr <<"\n"; //segmentation fault
+
+    // cout<<"bye";
+
+
+
+
+    //pass by reference using pointer
+
+    // int a = 10;
+    // changeA(&a);
+    // cout << a<< endl;
+
+
+    // reference variable 
+
+    // int a = 10;
+    // int &b = a;
+    //  b = 25;
+    //  cout << b << "\n";
+    //  cout << a << "\n";
+
+  
+int a = 10;
+int *b;
+
+changeA(a);
+cout << a << "\n";
+
+   
     
 
 
