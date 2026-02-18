@@ -109,30 +109,54 @@
 
 
 
+// live session 
+
+
+// #include <iostream>
+// using namespace std;
+
+// void swap(int a , int b) {
+//     cout <<a << " " << endl;
+//     int temp = a;
+//     a = b;
+//     b = temp;
+//     cout<< a << " " << b << endl;
+// }
+
+// int main () {
+
+//     int x =10;
+//    int y = 20;
+
+//     cout << x<< " " <<y <<endl;
+//     swap(x , y);
+//     cout<<x << " " << y <<endl;
+
+
+
+
+//     return 0;
+// }
+
+
+
+// PRACTICE QUESTION
 
 #include <iostream>
 using namespace std;
 
-void swap(int a , int b) {
-    cout <<a << " " << endl;
-    int temp = a;
-    a = b;
-    b = temp;
-    cout<< a << " " << b << endl;
-}
-
 int main () {
 
-    int x =10;
-   int y = 20;
-
-    cout << x<< " " <<y <<endl;
-    swap(x , y);
-    cout<<x << " " << y <<endl;
-
-
-
+    int x = 5, y = 10;
+    int *ptr1 = &x, *ptr2 = &y;
+    ptr2 = ptr1;
+    cout<< ptr2 <<"\n";
+    cout << ptr1<<"\n";
+    cout << &x <<"\n";
 
     return 0;
+    
 }
+
+
 
