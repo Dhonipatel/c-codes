@@ -142,6 +142,8 @@
 
 // PRACTICE QUESTION
 
+// what will ptr2 point to in the following code
+
 #include <iostream>
 using namespace std;
 
