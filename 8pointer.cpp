@@ -26,8 +26,8 @@
 
 
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
 //  int changeA(int num) {
 //     int a = 20;
@@ -44,12 +44,12 @@ using namespace std;
 
 
 
-void changeA(int &param) {
-    param = 20;
-    cout << param << "\n";
-}
+// void changeA(int &param) {
+//     param = 20;
+//     cout << param << "\n";
+// }
 
-int main () {
+// int main () {
 
     // int a = 10;
     // int *ptr = &a;
@@ -91,14 +91,46 @@ int main () {
     //  cout << a << "\n";
 
   
-int a = 10;
-int *b;
+// int a = 10;
+// int *b;
 
-changeA(a);
-cout << a << "\n";
+// changeA(a);
+// cout << a << "\n";
 
    
     
+
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+void swap(int a , int b) {
+    cout <<a << " " << endl;
+    int temp = a;
+    a = b;
+    b = temp;
+    cout<< a << " " << b << endl;
+}
+
+int main () {
+
+    int x =10;
+   int y = 20;
+
+    cout << x<< " " <<y <<endl;
+    swap(x , y);
+    cout<<x << " " << y <<endl;
+
+
 
 
     return 0;
