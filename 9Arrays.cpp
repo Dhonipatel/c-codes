@@ -45,18 +45,27 @@ int main () {
 //    }
 
 
-int arr [] = {5, 4, 3, 9 ,12};
-int n= sizeof(arr) /sizeof(int);
+// int arr [] = {5, 4, 3, 9 ,12};
+// int n= sizeof(arr) /sizeof(int);
 
-int max = arr [0];
-for(int i = 0; i<n; i++){
-    if(arr[i] > max) {
-        max= arr[i];
+// int max = arr [0];
+// for(int i = 0; i<n; i++){
+//     if(arr[i] > max) {
+//         max= arr[i];
+//     }
+// }
+// cout <<"lagest = " <<max <<endl;
+
+int arr[]= {3, 5, 6,2,7};
+int n= sizeof(arr) / sizeof(int);
+
+int small  =arr[0];
+for(int i=0; i<n; i++) {
+    if(arr[i] < small) {
+        small= arr[i];
     }
 }
-cout <<"lagest = " <<max <<endl;
-
-
+cout<<"smallest value = " << small <<endl;
 
 
     return 0;
