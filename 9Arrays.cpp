@@ -120,6 +120,40 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+
+// void printArr(int *arr, int n) {
+//     for(int i=0; i<n; i++) {
+//         cout<< arr[i] << ",";
+//     }
+//     cout << endl;
+// }
+
+// int  main() {
+
+
+//     int arr[]= {5, 6, 3, 9, 2};
+//     int n = sizeof(arr) / sizeof(int);
+
+//     int copyArr[n];
+//     for(int i=0; i<n; i++) {
+//         int j=n-i-1;
+//         copyArr[i] = arr[j];
+//     }
+//      for(int i=0; i<n; i++){
+//         arr[i]= copyArr[i];
+    
+//      }
+   
+//    printArr(arr, n);
+
+// return 0;
+
+// }
+
+
+
 #include <iostream>
 using namespace std;
 
@@ -132,20 +166,27 @@ void printArr(int *arr, int n) {
 
 int  main() {
 
-
+    
     int arr[]= {5, 6, 3, 9, 2};
     int n = sizeof(arr) / sizeof(int);
 
-    int copyArr[n];
-    for(int i=0; i<n; i++) {
-        int j=n-i-1;
-        copyArr[i] = arr[j];
+    int start =0 , end = n-1;
+
+    while(start < end) {
+        // int temp = arr[start];
+        // arr[start] = arr[end];
+        // arr[end] = temp;
+
+        swap(arr[start] , arr[end]);
+
+        start++;
+        end--;
     }
-     for(int i=0; i<n; i++){
-        arr[i]= copyArr[i];
-    
-     }
-   
+
+
+       
    printArr(arr, n);
+
+   return 0;
 
 }
