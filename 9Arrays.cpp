@@ -97,6 +97,10 @@
 // }
 
 
+
+
+
+
 // #include <iostream>
 // using namespace std;
 
@@ -119,6 +123,15 @@
 
 //     return 0;
 // }
+
+
+///////////////////////////////////////
+// REVERSE AN ARRAY
+//////////////////////////////////
+
+
+
+// WITH EXTEA SPACE
 
 // #include <iostream>
 // using namespace std;
@@ -154,39 +167,81 @@
 
 
 
-#include <iostream>
-using namespace std;
+// WITHOUT EXTRA SPACE (2POINTER APPROACH)
 
-void printArr(int *arr, int n) {
-    for(int i=0; i<n; i++) {
-        cout<< arr[i] << ",";
-    }
-    cout << endl;
-}
+// #include <iostream>
+// using namespace std;
 
-int  main() {
+// void printArr(int *arr, int n) {
+//     for(int i=0; i<n; i++) {
+//         cout<< arr[i] << ",";
+//     }
+//     cout << endl;
+// }
+
+// int  main() {
 
     
-    int arr[]= {5, 6, 3, 9, 2};
-    int n = sizeof(arr) / sizeof(int);
+//     int arr[]= {5, 6, 3, 9, 2};
+//     int n = sizeof(arr) / sizeof(int);
 
-    int start =0 , end = n-1;
+//     int start =0 , end = n-1;
 
-    while(start < end) {
-        // int temp = arr[start];
-        // arr[start] = arr[end];
-        // arr[end] = temp;
+//     while(start < end) {
+//         // int temp = arr[start];
+//         // arr[start] = arr[end];
+//         // arr[end] = temp;
 
-        swap(arr[start] , arr[end]);
+//         swap(arr[start] , arr[end]);
 
-        start++;
-        end--;
-    }
+//         start++;
+//         end--;
+//     }
 
 
        
-   printArr(arr, n);
+//    printArr(arr, n);
 
-   return 0;
+//    return 0;
 
+// }
+
+
+
+//////////////////////
+// BINARY SEARCH
+/////////////////////
+
+#include <iostream>
+using namespace std;
+
+int binSearch(int *arr, int n, int key) {
+    int st=0 , end = n-1;
+    
+    while(st <= n) {
+        int mid =(st +end) / 2;
+        if(arr[mid] == key) {
+            return mid; //key found
+        } else if(arr[mid] < key) { // 2nd half
+            st = mid + 1;
+
+        }else {
+            // 1st half
+            end = mid-1;
+        }
+
+    }
+    return -1;
+}
+
+int main() {
+
+    int arr[] = {2, 4, 6, 8, 10, 12, 14, 16,};
+    int n =sizeof(arr) / sizeof(int);
+
+    cout << binSearch(arr, n, 12);
+    
+
+
+    return 0;
 }
