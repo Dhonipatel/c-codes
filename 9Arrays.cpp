@@ -268,13 +268,25 @@ int main() {
     // decreament
 
 
-    int a = 5;
-    int *ptr = &a;
+    // int a = 5;
+    // int *ptr = &a;
 
-    cout << ptr << "\n";
-    ptr++;
-    cout << ptr << "\n";
-    ptr--;
+    // cout << ptr << "\n";
+    // ptr++;
+    // cout << ptr << "\n";
+    // ptr--;
+
+
+
+    // ADDITION SUBTRACTION OF CONSTANT
+
+    // int a =5;
+    // int *ptr = &a;
+
+    // cout << ptr << "\n"; //1st
+    // ptr = ptr +3;
+    // cout << (ptr-3) << "\n";
+
 
     return 0;
 }
