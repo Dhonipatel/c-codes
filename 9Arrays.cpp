@@ -251,56 +251,94 @@
 // POINTER ARITHMETIC
 //////////////////////
 
+// #include <iostream>
+// using namespace std;
+
+// void printArr(int *ptr, int n) {
+//     for(int i=0; i<n; i++) {
+//         cout << *ptr <<"\n";
+//         ptr = ptr+1;
+//     }
+// }
+
+// int main() {
+
+//     // increament 
+
+//     // char ch ='a';
+//     // int a = 10;
+//     // int *ptr = &ch;
+//     // cout<< ptr << "\n";
+//     // ptr++; //1 char ++
+//     // cout << ptr << "\n";
+
+//     // decreament
+
+
+//     // int a = 5;
+//     // int *ptr = &a;
+
+//     // cout << ptr << "\n";
+//     // ptr++;
+//     // cout << ptr << "\n";
+//     // ptr--;
+
+
+
+//     // ADDITION SUBTRACTION OF CONSTANT
+
+//     // int a =5;
+//     // int *ptr = &a;
+
+//     // cout << ptr << "\n"; //1st
+//     // ptr = ptr +3;
+//     // cout << (ptr-3) << "\n";
+
+
+
+//     int arr[] = {1, 2, 3, 4, 5}; 
+//     int n = sizeof(arr) / sizeof(int);
+//     printArr(arr, n);
+    
+
+
+//     return 0;
+// }
+
+
+
 #include <iostream>
+#include <vector>
 using namespace std;
 
-void printArr(int *ptr, int n) {
-    for(int i=0; i<n; i++) {
-        cout << *ptr <<"\n";
-        ptr = ptr+1;
+vector<int> productExceptSelf(vector<int>& nums) {
+    int n = nums.size();
+    vector<int> answer(n, 1);
+
+    // Step 1: Left products
+    int left = 1;
+    for(int i = 0; i < n; i++) {
+        answer[i] = left;
+        left *= nums[i];
     }
+
+    // Step 2: Right products
+    int right = 1;
+    for(int i = n - 1; i >= 0; i--) {
+        answer[i] *= right;
+        right *= nums[i];
+    }
+
+    return answer;
 }
 
 int main() {
+    vector<int> nums = {1,2,3,4};
+    vector<int> result = productExceptSelf(nums);
 
-    // increament 
-
-    // char ch ='a';
-    // int a = 10;
-    // int *ptr = &ch;
-    // cout<< ptr << "\n";
-    // ptr++; //1 char ++
-    // cout << ptr << "\n";
-
-    // decreament
-
-
-    // int a = 5;
-    // int *ptr = &a;
-
-    // cout << ptr << "\n";
-    // ptr++;
-    // cout << ptr << "\n";
-    // ptr--;
-
-
-
-    // ADDITION SUBTRACTION OF CONSTANT
-
-    // int a =5;
-    // int *ptr = &a;
-
-    // cout << ptr << "\n"; //1st
-    // ptr = ptr +3;
-    // cout << (ptr-3) << "\n";
-
-
-
-    int arr[] = {1, 2, 3, 4, 5}; 
-    int n = sizeof(arr) / sizeof(int);
-    printArr(arr, n);
-    
-
+    for(int num : result) {
+        cout << num << " ";
+    }
 
     return 0;
 }
