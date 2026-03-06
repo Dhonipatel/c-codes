@@ -251,8 +251,8 @@
 // POINTER ARITHMETIC
 //////////////////////
 
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
 // void printArr(int *ptr, int n) {
 //     for(int i=0; i<n; i++) {
@@ -261,7 +261,7 @@
 //     }
 // }
 
-// int main() {
+int main() {
 
 //     // increament 
 
@@ -299,11 +299,25 @@
 //     int arr[] = {1, 2, 3, 4, 5}; 
 //     int n = sizeof(arr) / sizeof(int);
 //     printArr(arr, n);
+
+
+// POINTER ARITHMETIC
     
+int arr[20] = {1, 2, 3, 4, 5, 6};
+int *ptr1 = arr;
+int *ptr2 = ptr1 + 3;
+
+// subtraction
+
+// cout << ptr2 - ptr1 <<"\n";
+
+// compare 
 
 
-//     return 0;
-// }
+cout <<(ptr2 > ptr1) << "\n"; //yes : true : 1
+
+    return 0;
+}
 
 
 
