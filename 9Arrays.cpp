@@ -427,36 +427,36 @@
 
 
 
-// MAX SUMM SUBARRAY (SLIGHTLY OPTIMIZED)
+// MAX SUMM SUBARRAY (KADANES ALGORITHM)
 
-#include <iostream>
-#include <climits>
-using namespace std; 
+// #include <iostream>
+// #include <climits>
+// using namespace std; 
 
-int maxSum = INT_MIN;
-int currSum =0;
+// int maxSum = INT_MIN;
+// int currSum =0;
 
-void maxSubarraySum3 (int *arr, int n) { 
-for(int i = 0; i<n; i++) {
-  currSum +=arr[i];
-  maxSum = max(currSum , maxSum);
-  if(currSum < 0) {
-    currSum = 0;
-  }
+// void maxSubarraySum3 (int *arr, int n) { 
+// for(int i = 0; i<n; i++) {
+//   currSum +=arr[i];
+//   maxSum = max(currSum , maxSum);
+//   if(currSum < 0) {
+//     currSum = 0;
+//   }
 
-}
+// }
 
-cout << "maximum subarray sum = " <<maxSum << endl;
+// cout << "maximum subarray sum = " <<maxSum << endl;
 
-}
+// }
 
-int main() {
+// int main() {
 
-  int arr[6] = {2, -3, 6, -5, 4, 2};
-  int n = sizeof(arr) / sizeof(int);
+//   int arr[6] = {2, -3, 6, -5, 4, 2};
+//   int n = sizeof(arr) / sizeof(int);
 
-  maxSubarraySum3(arr, n);
+//   maxSubarraySum3(arr, n);
 
 
-  return 0;
-}
+//   return 0;
+// }
