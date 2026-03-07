@@ -357,34 +357,69 @@
 
 
 
-#include <iostream>
-using namespace std;
+// // MAX SUBARRAY SUM
 
-void maxSubarraySum1(int *arr, int n) {
-  int maxSum = INT _MAX;
+// #include <iostream>
+// #include <climits>
+// using namespace std;
 
-  for(int start=0; start<n; start++) {
-    for(int end=start; end<n; end++) {
-      int currSum =0;
-      for(int i = start; i<=end; i++) {
-        currSum += arr[i];
-      }
-      cout<< currSum << " ,";
-      maxSum = max(maxSum, currSum);
-    }
+// void maxSubarraySum1(int *arr, int n) {
+//   int maxSum = INT_MIN;
 
-    cout << endl;
-  }
-  cout <<"maxium subarray sum =" << maxSum << endl;
+//   for(int start=0; start<n; start++) {
+//     for(int end=start; end<n; end++) {
+//       int currSum =0;
+//       for(int i = start; i<=end; i++) {
+//         currSum += arr[i];
+//       }
+//       cout<< currSum << " ,";
+//       maxSum = max(maxSum, currSum);
+//     }
 
+//     cout << endl;
+//   }
+//   cout <<"maxium subarray sum =" << maxSum << endl;
+
+// }
+
+// int main ()  { 
+     
+//   int arr[] = {2, -3, 6, -5, 4, 2};
+//   int n = sizeof(arr)/ sizeof (int);
+
+//   maxSubarraySum1(arr , n);
+
+//   return 0;
 }
 
+
+
+#include <iostream>
+#include <climits>
+using namespace std; 
+
+int maxSum = INT_MIN;
+void maxSubarraySum2 (int *arr, int n) {
+  for( int start=0; start<n; start++) {
+   int  currSum =0;
+   for( int end = start; end<n; end++) {
+    currSum +=arr[end];
+    maxSum = max(maxSum , currSum);
+
+   }
+   cout <<endl;
+  }
+  cout << "maximum subarray sum =" << maxSum << endl;
+}
+
+  
+
 int main ()  { 
-     
-  int arr[] = {2, -3, 6, -5, 4, 2};
-  int n = sizeof(arr)/ sizeof (int);
 
-  maxSubarraySum1(arr , n);
+  int arr[] ={2, -3, 6, -5, 4 ,2};
+  int n= sizeof(arr) / sizeof (int);
 
-  return 0;
+  maxSubarraySum2(arr , n);
+
+    return 0;
 }
