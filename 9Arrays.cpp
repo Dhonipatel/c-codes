@@ -498,3 +498,31 @@
   
 //   return 0;
 // }
+
+
+
+// TRAPPING RAINWATER
+
+#include <iostream>
+#include <climits>
+using namespace std;
+
+void trap(int *height, int n) {
+  int leftMax[20000];
+  leftMax[0] = INT_MIN;
+  for(int i=1; i<n; i++) {
+    leftMax[i]= max(leftMax[i-1], height[i-1]);
+    cout<< leftMax[i] <<" ,";
+  }
+  cout <<endl;
+}
+
+
+
+int main() {
+
+  int height[] = {4, 2, 0, 6, 3, 2, 5};
+  int n = sizeof(height) /sizeof(int);
+
+  return 0;
+}
