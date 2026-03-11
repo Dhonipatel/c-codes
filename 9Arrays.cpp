@@ -596,25 +596,25 @@
 // }
 
 
-#include <iostream>
-#include <climits>   // ye add karo
-using namespace std;
+// #include <iostream>
+// #include <climits>   // ye add karo
+// using namespace std;
 
-void maxSubarraySum1(int *arr, int n) {
-    int maxSum = INT_MIN;
+// void maxSubarraySum1(int *arr, int n) {
+//     int maxSum = INT_MIN;
 
-    for(int start = 0; start < n; start++) {
-        for(int end = start; end < n; end++) {
-            int currSum = 0;
+//     for(int start = 0; start < n; start++) {
+//         for(int end = start; end < n; end++) {
+//             int currSum = 0;
 
-            for(int i = start; i <= end; i++) {
-                currSum += arr[i];
-            }
+//             for(int i = start; i <= end; i++) {
+//                 currSum += arr[i];
+//             }
 
-            cout << currSum << " ";
-            maxSum = max(maxSum, currSum);
-        }
-    }
+//             cout << currSum << " ";
+//             maxSum = max(maxSum, currSum);
+//         }
+//     }
 
-    cout << endl << "Max Sum = " << maxSum;
-}
+//     cout << endl << "Max Sum = " << maxSum;
+// }
