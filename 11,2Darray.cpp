@@ -41,74 +41,74 @@
 // }
 
 
-//SPIRAL MATRIX /////////////
+// //SPIRAL MATRIX /////////////
 
-#include <iostream> 
-using namespace std;
+// #include <iostream> 
+// using namespace std;
 
-void spiralMatrix(int mat[] [4], int n, int m) {
+// void spiralMatrix(int mat[] [4], int n, int m) {
 
-    int srow= 0, scol =0;
+//     int srow= 0, scol =0;
 
-    int erow = n-1, ecol= m-1;
+//     int erow = n-1, ecol= m-1;
 
-    while(srow <=erow && scol <= ecol) { // odd matrix
-        // top
+//     while(srow <=erow && scol <= ecol) { // odd matrix
+//         // top
 
-        for(int j=scol; j <=ecol; j++) {
-            cout << mat[srow][j] <<" ";
-        } 
+//         for(int j=scol; j <=ecol; j++) {
+//             cout << mat[srow][j] <<" ";
+//         } 
 
-        // right
+//         // right
 
-        for(int i=srow+1; i<=erow; i++) {
-            cout<< mat[i][ecol] << " ";
-        }
+//         for(int i=srow+1; i<=erow; i++) {
+//             cout<< mat[i][ecol] << " ";
+//         }
 
-        // bottom
+//         // bottom
 
-        for(int j=ecol-1; j>=scol; j--) {
-            if(srow == erow) {  // middle
-                break;
-            }
-            cout << mat[erow][j] << " ";
-        }
+//         for(int j=ecol-1; j>=scol; j--) {
+//             if(srow == erow) {  // middle
+//                 break;
+//             }
+//             cout << mat[erow][j] << " ";
+//         }
 
-        // left 
-        for(int i=erow-1; i>=srow+1; i--) {
-            if(scol == ecol) { // middle
-                break;
+//         // left 
+//         for(int i=erow-1; i>=srow+1; i--) {
+//             if(scol == ecol) { // middle
+//                 break;
 
-            }
-            cout << mat[i][scol] <<" ";
-        }
+//             }
+//             cout << mat[i][scol] <<" ";
+//         }
 
-        srow++; scol++;
-        erow--; ecol--;
+//         srow++; scol++;
+//         erow--; ecol--;
 
-    } 
+//     } 
 
-    cout <<endl;
+//     cout <<endl;
 
 
-}
+// }
 
-int main() {
+// int main() {
     
-        int matrix[4][4] = {{1, 2, 3, 4},
-                            {5, 6, 7, 8 },
-                            {9, 10, 11, 12},
-                            {13, 14, 15, 16}};
+//         int matrix[4][4] = {{1, 2, 3, 4},
+//                             {5, 6, 7, 8 },
+//                             {9, 10, 11, 12},
+//                             {13, 14, 15, 16}};
 
-    spiralMatrix(matrix, 4, 4);   
+//     spiralMatrix(matrix, 4, 4);   
     
-     int matrix2[3][4] = {{1, 2, 3, 4},
-                            {5, 6, 7, 8 },
-                            {9, 10, 11, 12}};
+//      int matrix2[3][4] = {{1, 2, 3, 4},
+//                             {5, 6, 7, 8 },
+//                             {9, 10, 11, 12}};
 
-    spiralMatrix(matrix, 3, 4);    
+//     spiralMatrix(matrix, 3, 4);    
 
   
 
-    return 0;
-}
+//     return 0;
+// }
