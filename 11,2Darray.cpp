@@ -244,10 +244,10 @@
 
 
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main () {
+// int main () {
 
 //     int n = 4;
 // int num = 1;
@@ -261,19 +261,49 @@ int main () {
 
 
 
-
-// int n = 4;
-// int num = 1;
-// for(int i = 1; i <= n; i++) {
-//     for(int j = 1; j <= i; j++) {
-//         cout << num << " ";
-//         num++;
-//     }
-//     cout << endl;
+//     return 0;
 // }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ASSGAIMENT QUESTIONS
+
+#include <iostream>
+using namespace std;
+
+
+int main () {
+    int arr[2][3] = {{4, 7, 8}, {8, 8, 7}};
+    int n=2;
+    int m=3;
+    int count = 0;
+    
+      for(int i=0; i<n; i++) {
+        for(int j=0; j<m; j++) {
+            if(arr[i][j] == 7) {
+                count++;
+            }
+        }
+    }
+    cout<<count<<endl;
+  
+
     return 0;
 }
-
-
