@@ -286,7 +286,7 @@
 // ASSGAIMENT QUESTIONS
 
 // #include <iostream>
-// using namespace std;
+// using namespace std;  
 
 
 // int main () {
@@ -307,3 +307,57 @@
 
 //     return 0;
 // }
+
+
+// #include <iostream>
+// using namespace std;
+
+// int main () {
+
+// int arr[3][3] = {{1, 4, 9}, {11, 4, 3}, {2, 2, 3}};
+
+// int n=3,m=3;
+
+// int sum=0;
+
+// //WE WILL TAKE THE SUM OF ALL ELEMENTS IN THE INDEX1 ROW
+
+// for(int j=0; j<m; j++) {
+//     sum = sum+ arr[1][j];
+// }
+
+// cout<<sum<<endl;
+
+//     return 0;
+// }
+
+
+
+#include <iostream> 
+using  namespace  std;
+
+int main () {
+
+    int n=3;
+    // transpose of a square matrix
+
+    int arr[3][3] = {{10, 20, 30}, {7, 8, 9}, {15, 40, 60}};
+
+    for(int i=0; i<n; i++) {
+        for(int j=i; j<n; j++) {
+            swap(arr[i][j], arr[j][i]);
+        }
+    }
+
+    // print the new 2d array
+    for(int i=0; i<n; i++) {
+        for(int j=0; j<n; j++) {
+            // spacce fater printing every element of each row 
+            cout <<arr[i][j] <<" ";
+        }
+        //change line after printing a row
+        cout <<endl;
+    }
+
+    return 0;
+}
