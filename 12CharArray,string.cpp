@@ -26,25 +26,51 @@
 
 
 
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+
+//     // char arr[5] = {'a', 'b','c','d','e', };
+//     // cout << arr<<endl;
+
+//     // char work[] = "code";
+//     // cout << work << endl;
+
+//     // char work[5] = "code";
+//     // cout << work <<endl;
+
+// //     char work[]={'c','o','d','e','\0'};
+// //     cout <<work <<endl;
+
+// //     char work [50]= {'c','o','d','e','\0'};
+// //     cout << work << endl; 
+
+//     return 0;
+// }
+
+
+
 #include <iostream>
+#include <cstring>
 using namespace std;
 
-int main() {
+int main () {
 
-    // char arr[5] = {'a', 'b','c','d','e', };
-    // cout << arr<<endl;
+    // char word[30];
 
-    // char work[] = "code";
-    // cout << work << endl;
+    // cin >> word; // cin ignore whitespace
 
-    // char work[5] = "code";
-    // cout << work <<endl;
+    // cout << "your word was :" << word << endl;
+    // cout << "length :" << strlen(word) << endl;
 
-//     char work[]={'c','o','d','e','\0'};
-//     cout <<work <<endl;
+      char sentence[30];
 
-//     char work [50]= {'c','o','d','e','\0'};
-//     cout << work << endl; 
+    cin.getline(sentence, 30, '*');
+
+    cout << "your word was :" << sentence << endl;
+    cout << "length :" << strlen(sentence) << endl;
 
     return 0;
+
 }
