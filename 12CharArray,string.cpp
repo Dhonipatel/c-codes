@@ -9,11 +9,17 @@ int main() {
     // char ch4 = '9';
 
 
-    char ch1='a';
-    cout<<(int) ch1 <<endl;
+    // char ch1='a';
+    // cout<<(int) ch1 <<endl;
 
-    char ch2='A';
-    cout<<(int) ch2 <<endl;
+    // char ch2='A';
+    // cout<<(int) ch2 <<endl;
+
+    char ch1= 'f';
+    int pos= ch1 - 'a';
+
+    cout<<pos<<endl;
+
 
     return 0;
 }
