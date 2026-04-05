@@ -74,3 +74,19 @@ int main () {
     return 0;
 
 }
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    string word;
+
+    getline(cin, word);
+
+    cout << "Your word was: " << word << endl;
+    cout << "Length: " << word.length() << endl;
+
+    return 0;
+} 
