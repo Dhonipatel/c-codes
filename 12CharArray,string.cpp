@@ -76,17 +76,17 @@ int main () {
 }
 
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main() {
+// int main() {
 
-    string word;
+//     string word;
 
-    getline(cin, word);
+//     getline(cin, word);
 
-    cout << "Your word was: " << word << endl;
-    cout << "Length: " << word.length() << endl;
+//     cout << "Your word was: " << word << endl;
+//     cout << "Length: " << word.length() << endl;
 
-    return 0;
-} 
+//     return 0;
+// } 
