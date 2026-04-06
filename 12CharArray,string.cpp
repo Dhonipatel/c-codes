@@ -76,7 +76,7 @@
 // }
 
 
-// 
+// CONVERT TO UPPERCASE
 
 
 #include <iostream>
@@ -103,5 +103,9 @@ int main(){
 
   return 0;
 }
+
+
+// REVERSE  A CHAR ARRAY
+
 
 
