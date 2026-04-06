@@ -108,6 +108,7 @@
 // REVERSE  A CHAR ARRAY
 
 #include <iostream>
+#include <cstring>
 using namespace std;
 
 void reverse(char word[], int n) {
