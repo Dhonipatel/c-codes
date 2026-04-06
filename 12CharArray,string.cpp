@@ -51,42 +51,57 @@
 
 
 
+// #include <iostream>
+// #include <cstring>
+// using namespace std;
+
+// int main () {
+
+//     // char word[30];
+
+//     // cin >> word; // cin ignore whitespace
+
+//     // cout << "your word was :" << word << endl;
+//     // cout << "length :" << strlen(word) << endl;
+
+//       char sentence[30];
+
+//     cin.getline(sentence, 30, '*');
+
+//     cout << "your word was :" << sentence << endl;
+//     cout << "length :" << strlen(sentence) << endl;
+
+//     return 0;
+
+// }
+
+
+// 
+
+
 #include <iostream>
 #include <cstring>
 using namespace std;
 
-int main () {
+int toUpper(char word[] ,int n) {
 
-    // char word[30];
+  for(int i=0; i<n; i++) {
+    char ch= word[i];
+    if(ch>= 'A' && ch<= 'Z') {
 
-    // cin >> word; // cin ignore whitespace
+    } else{
+      word[i] = ch- 'a' + 'A';
+    }
+  }
+}
 
-    // cout << "your word was :" << word << endl;
-    // cout << "length :" << strlen(word) << endl;
+int main(){
+  char word[] = "ApPle";
+  toUpper(word, strlen(word));
+  cout << word << endl;
 
-      char sentence[30];
 
-    cin.getline(sentence, 30, '*');
-
-    cout << "your word was :" << sentence << endl;
-    cout << "length :" << strlen(sentence) << endl;
-
-    return 0;
-
+  return 0;
 }
 
 
-// #include <iostream>
-// using namespace std;
-
-// int main() {
-
-//     string word;
-
-//     getline(cin, word);
-
-//     cout << "Your word was: " << word << endl;
-//     cout << "Length: " << word.length() << endl;
-
-//     return 0;
-// } 
