@@ -79,33 +79,61 @@
 // CONVERT TO UPPERCASE
 
 
+// #include <iostream>
+// #include <cstring>
+// using namespace std;
+
+// int toUpper(char word[] ,int n) {
+
+//   for(int i=0; i<n; i++) {
+//     char ch= word[i];
+//     if(ch>= 'A' && ch<= 'Z') {
+
+//     } else{
+//       word[i] = ch- 'a' + 'A';
+//     }
+//   }
+// }
+
+// int main(){
+//   char word[] = "ApPle";
+//   toUpper(word, strlen(word));
+//   cout << word << endl;
+
+
+//   return 0;
+// }
+
+
+// REVERSE  A CHAR ARRAY
+
 #include <iostream>
-#include <cstring>
 using namespace std;
 
-int toUpper(char word[] ,int n) {
+void reverse(char word[], int n) {
 
-  for(int i=0; i<n; i++) {
-    char ch= word[i];
-    if(ch>= 'A' && ch<= 'Z') {
+  int st = 0, end = n-1;
 
-    } else{
-      word[i] = ch- 'a' + 'A';
-    }
+  while(st < end) {
+    swap(word[st], word[end]);
+    st++;
+    end--;
   }
 }
 
-int main(){
-  char word[] = "ApPle";
-  toUpper(word, strlen(word));
-  cout << word << endl;
+
+int main() {
+
+     char word[] = "code";
+     reverse(word, strlen(word));
+
+     cout << "reverse = " << word << endl;
+     return 0;
+
 
 
   return 0;
 }
-
-
-// REVERSE  A CHAR ARRAY
 
 
 
