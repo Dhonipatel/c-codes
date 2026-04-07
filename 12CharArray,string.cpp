@@ -171,22 +171,22 @@
 // //////// STRING IN ++ //
 
 
-#include <iostream>
-#include <string>
-using namespace std;
+// #include <iostream>
+// #include <string>
+// using namespace std;
 
-int main() {
+// int main() {
 
-  string str;
-  getline(cin, str);
+//   string str;
+//   getline(cin, str);
 
-  cout << str[0] << endl;
-  cout << str[1] << endl;
-  cout << str[2] << endl;
+//   cout << str[0] << endl;
+//   cout << str[1] << endl;
+//   cout << str[2] << endl;
 
 
-  return 0;
-}
+//   return 0;
+// }
 
 
 
