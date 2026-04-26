@@ -251,21 +251,21 @@
 //     return 0;
 // }
 
+// // 
+// #include <iostream>
+// using namespace std;
 
-#include <iostream>
-using namespace std;
+// int main() {
 
-int main() {
+//     for(int num = 1; num <= 10; num++) {
+//         cout << "Table of " << num << endl;
 
-    for(int num = 1; num <= 10; num++) {
-        cout << "Table of " << num << endl;
+//         for(int i = 1; i <= 10; i++) {
+//             cout << num << " x " << i << " = " << num * i << endl;
+//         }
 
-        for(int i = 1; i <= 10; i++) {
-            cout << num << " x " << i << " = " << num * i << endl;
-        }
+//         cout << endl;
+//     }
 
-        cout << endl;
-    }
-
-    return 0;
-}
+//     return 0;
+// }
