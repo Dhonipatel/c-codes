@@ -44,22 +44,23 @@
 // }
 
 
-#include  <iostream> 
-using namespace std;
+// #include  <iostream> 
+// using namespace std;
 
-int* func () {
-    int *ptr = new int;
-    *ptr = 1200;
-    cout << " ptr point to " << *ptr << endl;
+// int* func () {
+//     int *ptr = new int;
+//     *ptr = 1200;
+//     cout << " ptr point to " << *ptr << endl;
 
-    return ptr;
-}
+//     return ptr;
+// }
 
-int main () {
+// int main () {
 
-    int *x = func();
-    cout << *x<< endl;
+//     int *x = func();
+//     cout << *x<< endl;
     
 
-    return 0;
-}
+//     return 0;
+// }
+
