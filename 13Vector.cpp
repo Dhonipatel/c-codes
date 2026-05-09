@@ -64,34 +64,37 @@
 //     return 0;
 // }
 
-#include <iostream>
-using namespace std;
 
-int main () {
+// 2D DYNAMIC ARRAY  
 
-    int rows, cols;
+// #include <iostream>
+// using namespace std;
 
-    cout <<"enter rows :";
-    cin>> rows;
-    cout << "enter cols : ";
-    cin>>cols;
+// int main () {
 
-    int* *matrix = new int*[rows];
-    for(int i=0; i<rows; i++) {
-        matrix[i] = new int [cols];
-    }
+//     int rows, cols;
 
-    // data store 
+//     cout <<"enter rows :";
+//     cin>> rows;
+//     cout << "enter cols : ";
+//     cin>>cols;
 
-    int x = 1;
-    for(int i=0; i<rows; i++) {
-        for(int j=0; j<cols; j++) {
-            matrix[i][j] = x++;
-            cout <<matrix[i][j] <<" ";
+//     int* *matrix = new int*[rows];
+//     for(int i=0; i<rows; i++) {
+//         matrix[i] = new int [cols];
+//     }
 
-        }
-        cout <<endl;
-    }
+//     // data store 
 
-    return 0;
-}
+//     int x = 1;
+//     for(int i=0; i<rows; i++) {
+//         for(int j=0; j<cols; j++) {
+//             matrix[i][j] = x++;
+//             cout <<matrix[i][j] <<" ";
+
+//         }
+//         cout <<endl;
+//     }
+
+//     return 0;
+// }
