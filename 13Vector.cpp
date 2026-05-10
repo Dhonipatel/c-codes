@@ -102,19 +102,59 @@
 
 // VECTOR IMPLEMENTATION IN MEMORY
 
+// #include <iostream>
+// #include<vector>
+// using namespace std;
+
+// int main () {
+
+//     vector<int> vec ={1, 2, 3, 4};
+//     cout <<"size :" << vec.size() <<endl;
+//     cout << "capacity :"<< vec.capacity() <<endl;
+
+//     vec.push_back(5);
+//     cout <<"size :" << vec.size() <<endl;
+//     cout << "capacity :"<< vec.capacity() <<endl;
+
+//     return 0;
+// }
+
+
+
+// PAIR SUM
+
 #include <iostream>
-#include<vector>
+#include <vector>
 using namespace std;
 
-int main () {
+vector<int> pairSum(vector<int> arr, int target) {
 
-    vector<int> vec ={1, 2, 3, 4};
-    cout <<"size :" << vec.size() <<endl;
-    cout << "capacity :"<< vec.capacity() <<endl;
+    int st =0, end =arr.size()-1;
+    int currSum =0;
+    vector<int> ans;
 
-    vec.push_back(5);
-    cout <<"size :" << vec.size() <<endl;
-    cout << "capacity :"<< vec.capacity() <<endl;
+    while(st < end) {
+        currSum = arr[st] + arr[end];
+        if(currSum == target) {
+            ans.push_back(st);
+            ans.push_back(end);
+            return ans;
+        } else if(currSum > target) {
+            end--;
+        }else{
+            st++;
+        }
+    }
+    return ans;
+}
+
+int main(){
+
+    vector<int>vec = {2, 7, 11, 15};
+    int target =9;
+
+    vector<int> ans = pairSum(vec, target);
+    cout<< ans[0] << "," << ans[1]<<endl;
 
     return 0;
 }
