@@ -9,5 +9,9 @@ int main() {
     cout<<(3 ^ 5) << endl;
     
 
+    // BINARY NOT  OPERATOR
+
+    cout << (~6) << endl;
+
     return 0;
 }
