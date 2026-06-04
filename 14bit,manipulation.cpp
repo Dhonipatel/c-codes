@@ -11,7 +11,11 @@ int main() {
 
     // BINARY NOT  OPERATOR
 
-    cout << (~6) << endl;
+    cout << (~6) << endl; 
+    cout << (~0 )<< endl; 
+
+    // BINARY SHIFT OPERTORS
+    cout << (7 >> 2) << endl;
 
     return 0;
 }
