@@ -44,3 +44,27 @@
 //     return 0;
 // }
 
+
+// GET Ith BIT
+
+#include <iostream>
+using namespace std;
+
+int getIthBit(int num, int i) {
+    int bitmarks = 1 << i;
+
+    if(!(num & bitmarks)) {
+        return 0;
+    } else {
+        return 1;
+    }
+}
+
+int main() {
+    cout << getIthBit(6, 2);
+    return 0;
+    
+}
+
+
+
