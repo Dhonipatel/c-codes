@@ -24,22 +24,23 @@
 // CHECK NUM ODD AND EVEN
 
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-void oddOrEven(int num) {
-    if(!(num & 1)) {
-        cout<<"even"<<endl;
-    } else{
-        cout<<"odd"<<endl;
-    }
-}
+// void oddOrEven(int num) {
+//     if(!(num & 1)) {
+//         cout<<"even"<<endl;
+//     } else{
+//         cout<<"odd"<<endl;
+//     }
+// }
 
-int main() {
+// int main() {
 
-    oddOrEven(5);
-    oddOrEven(6);
-    oddOrEven(13);
+//     oddOrEven(5);
+//     oddOrEven(6);
+//     oddOrEven(13);
 
-    return 0;
-}
+//     return 0;
+// }
+
