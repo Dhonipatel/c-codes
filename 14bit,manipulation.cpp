@@ -66,5 +66,20 @@
     
 // }
 
+//set ith bit
 
+#include <iostream>
+using namespace std;
+
+int setIthBit(int num, int i) {
+    int bitMarks =1<<i;
+    return (num | bitMarks);
+}
+
+int main() {
+
+    cout<< setIthBit(6, 3) <<endl;
+
+    return 0;
+}
 
