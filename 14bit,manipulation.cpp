@@ -83,3 +83,14 @@ int main() {
     return 0;
 }
 
+#include <iostream>
+using namespace std;
+
+void greet() {
+    cout << "Hello";
+}
+
+int main() {
+    greet();
+    return 0;
+}
