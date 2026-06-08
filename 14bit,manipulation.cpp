@@ -83,29 +83,31 @@ int main() {
     return 0;
 }
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main() {
+// int main() {
 
-    char arr[] = "aaabcbb";
+//     char arr[] = "aaabcbb";
 
-    int freq[256] = {0};
+//     int freq[256] = {0};
 
-    // Count frequency
-    for(int i = 0; arr[i] != '\0'; i++) {
-        freq[arr[i]]++;
-    }
+//     // Count frequency
+//     for(int i = 0; arr[i] != '\0'; i++) {
+//         freq[arr[i]]++;
+//     }
 
-    // Find first non-repeating character
-    for(int i = 0; arr[i] != '\0'; i++) {
+//     // Find first non-repeating character
+//     for(int i = 0; arr[i] != '\0'; i++) {
 
-        if(freq[arr[i]] == 1) {
-            cout << "Non-repeating character: " << arr[i];
-            break;
-        }
-    }
+//         if(freq[arr[i]] == 1) {
+//             cout << "Non-repeating character: " << arr[i];
+//             break;
+//         }
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
+
+
 
