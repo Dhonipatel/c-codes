@@ -84,29 +84,45 @@
 // }
 
 
-// CHECK FOR POWER OF 2
+// // CHECK FOR POWER OF 2
+
+// #include <iostream>
+// using namespace std;
+
+// bool isPowerOf2(int num){
+//     if(!(num & (num-1))) {
+//         return true;
+
+//     }else{
+//         return false;
+//     }
+// }
+
+// int main() {
+//     cout << isPowerOf2(4) << endl;
+//     cout << isPowerOf2(8) << endl;
+//     cout << isPowerOf2(7) << endl;
+//     cout << isPowerOf2(13) << endl;
+
+
+//     return 0;
+// }
+
+
+//PRACTICE QUESTION
+
 
 #include <iostream>
 using namespace std;
 
-bool isPowerOf2(int num){
-    if(!(num & (num-1))) {
-        return true;
-
-    }else{
-        return false;
-    }
+void updateIthBit(int num, int i, int val) {
+    num = num & ~(1 << i); 
+    num = num | (val << i);
+    cout<< num << endl;
 }
 
 int main() {
-    cout << isPowerOf2(4) << endl;
-    cout << isPowerOf2(8) << endl;
-    cout << isPowerOf2(7) << endl;
-    cout << isPowerOf2(13) << endl;
-
+    updateIthBit(7, 2, 0);
 
     return 0;
 }
-
-
-
