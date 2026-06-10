@@ -68,21 +68,45 @@
 
 //set ith bit
 
+// #include <iostream>
+// using namespace std;
+
+// int setIthBit(int num, int i) {
+//     int bitMarks =1<<i;
+//     return (num | bitMarks);
+// }
+
+// int main() {
+
+//     cout<< setIthBit(6, 3) <<endl;
+
+//     return 0;
+// }
+
+
+// CHECK FOR POWER OF 2
+
 #include <iostream>
 using namespace std;
 
-int setIthBit(int num, int i) {
-    int bitMarks =1<<i;
-    return (num | bitMarks);
+bool isPowerOf2(int num){
+    if(!(num & (num-1))) {
+        return true;
+
+    }else{
+        return false;
+    }
 }
 
 int main() {
+    cout << isPowerOf2(4) << endl;
+    cout << isPowerOf2(8) << endl;
+    cout << isPowerOf2(7) << endl;
+    cout << isPowerOf2(13) << endl;
 
-    cout<< setIthBit(6, 3) <<endl;
 
     return 0;
 }
-
 
 
 
