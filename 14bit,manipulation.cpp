@@ -128,17 +128,45 @@
 // }
 
 
+// #include <iostream>
+// using namespace std;
+// void clearIthBit(int num, int i) {
+//     int bitMarks = (~0) << i;
+//     num = num & bitMarks;
+
+//     cout << num << endl;
+// }
+
+// int main() {
+//     clearIthBit(15, 2);
+
+//   return 0;
+// }
+
+
+
+
+// COUNT SET BIT
+
 #include <iostream>
 using namespace std;
-void clearIthBit(int num, int i) {
-    int bitMarks = (~0) << i;
-    num = num & bitMarks;
 
-    cout << num << endl;
+int countSetBits(int num) {
+    int count = 0;
+
+    while(num > 0) {
+        int lastDig = num & 1;
+        count += lastDig;
+
+        num = num >> 1;
+    }
+    cout << count << endl;
+    return count;
 }
 
-int main() {
-    clearIthBit(15, 2);
+int main () {
 
-  return 0;
+    countSetBits(10);
+
+    return 0;
 }
