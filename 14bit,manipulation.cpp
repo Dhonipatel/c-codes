@@ -112,17 +112,33 @@
 //PRACTICE QUESTION
 
 
+// #include <iostream>
+// using namespace std;
+
+// void updateIthBit(int num, int i, int val) {
+//     num = num & ~(1 << i); 
+//     num = num | (val << i);
+//     cout<< num << endl;
+// }
+
+// int main() {
+//     updateIthBit(7, 2, 0);
+
+//     return 0;
+// }
+
+
 #include <iostream>
 using namespace std;
+void clearIthBit(int num, int i) {
+    int bitMarks = (~0) << i;
+    num = num & bitMarks;
 
-void updateIthBit(int num, int i, int val) {
-    num = num & ~(1 << i); 
-    num = num | (val << i);
-    cout<< num << endl;
+    cout << num << endl;
 }
 
 int main() {
-    updateIthBit(7, 2, 0);
+    clearIthBit(15, 2);
 
-    return 0;
+  return 0;
 }
