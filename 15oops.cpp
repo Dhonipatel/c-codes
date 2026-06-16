@@ -89,10 +89,14 @@ string color;
 
 public :
 
-Car(string nameVal, string colorVal) {
-    cout<<"constructor is called.. object being created ..\n";
-    name = nameVal;
-    color= colorVal;
+Car() {
+    cout<<"constructor without params ..\n";
+}
+
+Car(string name, string color) {
+    cout<<"constructor with parameter..\n";
+    this->name = name;
+    this->color= color;
 }
 
 void start() {
@@ -117,11 +121,9 @@ string getColor() {
 
 int main () {
 
-    Car c1("maruti 800", "white");
-
-    cout<< "car name : " << c1.getName()<<endl;
-    cout<<"car color : " <<c1.getColor() <<endl;
-
+    Car c0; // non- parameter
+    Car c1("maruti 800", "white"); //parameter
+    Car c2("fortuner,", "white");
 
 
     return 0;
