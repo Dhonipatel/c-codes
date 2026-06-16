@@ -80,50 +80,94 @@
 
 // CONSTRUCTOR
 
+// #include <iostream>
+// using namespace std;
+
+// class Car {
+// string name;
+// string color;
+
+// public :
+
+// Car() {
+//     cout<<"constructor without params ..\n";
+// }
+
+// Car(string name, string color) {
+//     cout<<"constructor with parameter..\n";
+//     this->name = name;
+//     this->color= color;
+// }
+
+// void start() {
+//     cout<<"car has start...\n"; 
+// }
+
+// void stop() {
+//     cout<<"car has stopped \n";
+// }
+
+// // GETTERS
+
+// string getName() {
+//     return name;
+// }
+
+// string getColor() {
+//     return color;
+// }
+
+// };
+
+// int main () {
+
+//     Car c0; // non- parameter
+//     Car c1("maruti 800", "white"); //parameter
+//     Car c2("fortuner,", "white");
+
+
+//     return 0;
+// }
+
+
+//PRACTICE
+
 #include <iostream>
 using namespace std;
 
-class Car {
-string name;
-string color;
+class User {
+    private :
+    int id;
+    string password;
 
-public :
+    public:
 
-Car() {
-    cout<<"constructor without params ..\n";
-}
+    string username;
 
-Car(string name, string color) {
-    cout<<"constructor with parameter..\n";
-    this->name = name;
-    this->color= color;
-}
+    User(int id){
+        this->id= id;
 
-void start() {
-    cout<<"car has start...\n"; 
-}
+    }
 
-void stop() {
-    cout<<"car has stopped \n";
-}
+    // getters
+    string getpassword() {  
+        return password;
+    }
+    // setters
 
-// GETTERS
-
-string getName() {
-    return name;
-}
-
-string getColor() {
-    return color;
-}
-
+    void setpassword(string password) {
+        this->password= password;
+    }
 };
 
-int main () {
+int main() {
 
-    Car c0; // non- parameter
-    Car c1("maruti 800", "white"); //parameter
-    Car c2("fortuner,", "white");
+    User u1(101);
+    u1.username= "apnacollege";
+    u1.setpassword("abcd");
+
+    cout << "usename :" <<u1.username <<endl;
+    cout<< " password : " << u1.getpassword ()<<endl;
 
 
     return 0;
