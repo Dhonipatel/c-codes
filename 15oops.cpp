@@ -132,43 +132,79 @@
 
 //PRACTICE
 
+// #include <iostream>
+// using namespace std;
+
+// class User {
+//     private :
+//     int id;
+//     string password;
+
+//     public:
+
+//     string username;
+
+//     User(int id){
+//         this->id= id;
+
+//     }
+
+//     // getters
+//     string getpassword() {  
+//         return password;
+//     }
+//     // setters
+
+//     void setpassword(string password) {
+//         this->password= password;
+//     }
+// };
+
+// int main() {
+
+//     User u1(101);
+//     u1.username= "apnacollege";
+//     u1.setpassword("abcd");
+
+//     cout << "usename :" <<u1.username <<endl;
+//     cout<< " password : " << u1.getpassword ()<<endl;
+
+
+//     return 0;
+// }
+
+
+//COPY CONSTRUCTOR
+
 #include <iostream>
 using namespace std;
 
-class User {
-    private :
-    int id;
-    string password;
+class Car {
 
     public:
+    string name;
+    string color;
 
-    string username;
-
-    User(int id){
-        this->id= id;
+    Car(string name, string color) {
+        this->name = name;
+        this->color = color;
 
     }
 
-    // getters
-    string getpassword() {  
-        return password;
-    }
-    // setters
-
-    void setpassword(string password) {
-        this->password= password;
+    Car(Car &original) {
+        cout<< "copy original to new..\n";
+        name = original.name;
+        color = original.color;
     }
 };
 
-int main() {
+int main () {
 
-    User u1(101);
-    u1.username= "apnacollege";
-    u1.setpassword("abcd");
+    Car c1("maruti 800","white" );
 
-    cout << "usename :" <<u1.username <<endl;
-    cout<< " password : " << u1.getpassword ()<<endl;
-
+    Car c2(c1);
+    cout <<c2.name << endl; // maruti800
+    cout << c2.color << endl; // white
 
     return 0;
 }
