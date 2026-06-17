@@ -373,44 +373,85 @@
 // MULTILEVEL INHERITANCE
 
 
+// #include <iostream>
+// using namespace std;
+
+// class Animal {
+//     public :
+//     void eat(){
+//         cout << "eat ..\n";
+//     }
+//     void breathe(){
+//         cout<< "breathe.. \n";
+//     }
+// };
+
+// class Mammal : public Animal {
+//     public :
+//     string bloodType;
+
+//     Mammal(){
+//         bloodType = "worm";
+//     }
+
+// };
+
+// class Dog : public Mammal{
+//     public:
+
+//     void tailWag() {
+//         cout<<"a Dog wags its tail \n";
+//     }
+// };
+
+// int main () {
+//     Dog d1;
+     
+//     d1.eat();
+//     d1.breathe();
+//     d1.tailWag();
+//     cout<<d1.bloodType<<endl;
+
+//     return 0;
+// }
+
+
+//MULTIPLE INHERITANCE
+
 #include <iostream>
 using namespace std;
 
-class Animal {
+class Teacher {
     public :
-    void eat(){
-        cout << "eat ..\n";
-    }
-    void breathe(){
-        cout<< "breathe.. \n";
-    }
+
+    int salary;
+    string subject;
 };
 
-class Mammal : public Animal {
-    public :
-    string bloodType;
-
-    Mammal(){
-        bloodType = "worm";
-    }
-
-};
-
-class Dog : public Mammal{
+class Student{
     public:
+    int rollno;
+    float cgpa;
 
-    void tailWag() {
-        cout<<"a Dog wags its tail \n";
-    }
 };
 
-int main () {
-    Dog d1;
-     
-    d1.eat();
-    d1.breathe();
-    d1.tailWag();
-    cout<<d1.bloodType<<endl;
+class TA : public Teacher, public Student {
+    public :
+    string name;
+
+};
+
+int main() {
+
+    TA ta1;
+
+    ta1.name ="dhoni kumar";
+    ta1.subject = "c++";
+    ta1.cgpa = 8.5;
+
+    cout <<ta1.name<<endl;
+    cout <<ta1.subject<<endl;
+    cout<< ta1.cgpa<<endl;
 
     return 0;
 }
