@@ -331,16 +331,36 @@ class Animal{
     }
 };
 
-class Fish : public Animal{
+// class Fish : public Animal{
+//     public :
+//     int fins;
+
+//     void swim() {
+//         cout<<"swim ..\n";
+//     }
+
+    // protected mode only access to inside class and drive class
+    class Fish : protected Animal{
     public :
     int fins;
 
     void swim() {
+        eat(); // you only acees to class 
         cout<<"swim ..\n";
     }
+
 };
 
 int main() {
+
+    Fish f1;
+
+    f1.fins =3;
+    cout<< f1.fins <<endl;
+
+    f1.swim();
+    // f1.eat();
+    // f1.breathe();
 
     return 0;
 }
