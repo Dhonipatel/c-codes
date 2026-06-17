@@ -313,57 +313,104 @@
 
 
 
-// INHERITANCE
+// INHERITANCE   //////////////////////////////////
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-class Animal{
-    public:
-    string color;
+// class Animal{
+//     public:
+//     string color;
 
-    void eat (){
-        cout<<"eat..\n";
+//     void eat (){
+//         cout<<"eat..\n";
 
-    }
-    void breathe() {
-        cout<<"breathe ..\n";
-    }
-};
+//     }
+//     void breathe() {
+//         cout<<"breathe ..\n";
+//     }
+// };
 
 // class Fish : public Animal{
 //     public :
 //     int fins;
 
 //     void swim() {
+//         eat();
 //         cout<<"swim ..\n";
 //     }
 
-    // protected mode only access to inside class and drive class
-    class Fish : protected Animal{
+//     // // protected mode only access to inside class and drive class
+//     // class Fish : protected Animal{
+//     // public :
+//     // int fins;
+
+//     // void swim() {
+//     //     eat(); // you only acees to class 
+//     //     cout<<"swim ..\n";
+//     // }
+
+//     // private mode
+//     // keep any mode in private you will not get aceess 
+
+// };
+
+// int main() {
+
+//     Fish f1;
+
+//     f1.fins =3;
+//     cout<< f1.fins <<endl;
+
+//     f1.swim();
+//     f1.eat();
+//     f1.breathe();
+
+//     return 0;
+// }
+
+
+// MULTILEVEL INHERITANCE
+
+
+#include <iostream>
+using namespace std;
+
+class Animal {
     public :
-    int fins;
-
-    void swim() {
-        eat(); // you only acees to class 
-        cout<<"swim ..\n";
+    void eat(){
+        cout << "eat ..\n";
     }
+    void breathe(){
+        cout<< "breathe.. \n";
+    }
+};
 
-    // private mode
-    // keep any mode in private you will not get aceess 
+class Mammal : public Animal {
+    public :
+    string bloodType;
+
+    Mammal(){
+        bloodType = "worm";
+    }
 
 };
 
-int main() {
+class Dog : public Mammal{
+    public:
 
-    Fish f1;
+    void tailWag() {
+        cout<<"a Dog wags its tail \n";
+    }
+};
 
-    f1.fins =3;
-    cout<< f1.fins <<endl;
-
-    f1.swim();
-    // f1.eat();
-    // f1.breathe();
+int main () {
+    Dog d1;
+     
+    d1.eat();
+    d1.breathe();
+    d1.tailWag();
+    cout<<d1.bloodType<<endl;
 
     return 0;
 }
