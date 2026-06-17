@@ -349,6 +349,9 @@ class Animal{
         cout<<"swim ..\n";
     }
 
+    // private mode
+    // keep any mode in private you will not get aceess 
+
 };
 
 int main() {
