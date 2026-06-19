@@ -418,40 +418,67 @@
 
 //MULTIPLE INHERITANCE
 
+// // #include <iostream>
+// using namespace std;
+
+// class Teacher {
+//     public :
+
+//     int salary;
+//     string subject;
+// };
+
+// class Student{
+//     public:
+//     int rollno;
+//     float cgpa;
+
+// };
+
+// class TA : public Teacher, public Student {
+//     public :
+//     string name;
+
+// };
+
+// int main() {
+
+//     TA ta1;
+
+//     ta1.name ="dhoni kumar";
+//     ta1.subject = "c++";
+//     ta1.cgpa = 8.5;
+
+//     cout <<ta1.name<<endl;
+//     cout <<ta1.subject<<endl;
+//     cout<< ta1.cgpa<<endl;
+
+//     return 0;
+// }
+
+
+//POLYMORPHISM = FUNCTION OVERLOADING 
+
 #include <iostream>
 using namespace std;
 
-class Teacher {
-    public :
-
-    int salary;
-    string subject;
-};
-
-class Student{
+class Print {
     public:
-    int rollno;
-    float cgpa;
+    void show(int x) {
+        cout<<"int :"<< x<<endl;
+    }
 
+    void show(string str) {
+        cout<<"string :" <<str <<endl;
+    }
 };
 
-class TA : public Teacher, public Student {
-    public :
-    string name;
+int main () {
 
-};
-
-int main() {
-
-    TA ta1;
-
-    ta1.name ="dhoni kumar";
-    ta1.subject = "c++";
-    ta1.cgpa = 8.5;
-
-    cout <<ta1.name<<endl;
-    cout <<ta1.subject<<endl;
-    cout<< ta1.cgpa<<endl;
+    Print obj1;
+    obj1.show(25);
+    obj1.show("apnacollge");
+    
 
     return 0;
 }
