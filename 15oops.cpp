@@ -534,27 +534,66 @@
 // RUN TIME POLYMORPHISM = FUNCTION OVERIDING
 
 
+// #include <iostream>
+// using namespace std;
+
+// class Parent {
+//     public :
+//     void show(){
+//         cout << "parent class show // \n";
+//     }
+// };
+
+// class Child {
+//     public :
+//     void show() {
+//         cout << "child class show..\n";
+//     }
+// };
+
+// int main () {
+
+//     Child child1;
+//     child1.show();
+
+//     return 0;
+// }
+
+
+// ABSTRACT CLASS AND PURE VIRTUAL FUNCTION
+
 #include <iostream>
 using namespace std;
 
-class Parent {
+// abstract class
+class Shape{
+    public:
+    virtual void  draw()=0; //ABSTRACT FNX , PURE VIRTUAL FNX
+};
+
+class Circle : public Shape {
     public :
-    void show(){
-        cout << "parent class show // \n";
+    void draw() {
+        cout<<"draw circle..\n";
     }
 };
 
-class Child {
-    public :
-    void show() {
-        cout << "child class show..\n";
+class Squre : public Shape{
+    public: 
+    void draw() {
+        cout<< " draw squre ..\n";
     }
 };
 
 int main () {
 
-    Child child1;
-    child1.show();
+    Circle cir1;
+    cir1.draw();
+
+    Squre squ1;
+    squ1.draw();
+
+
 
     return 0;
 }
