@@ -457,28 +457,64 @@
 // }
 
 
-//POLYMORPHISM = FUNCTION OVERLOADING 
+// //POLYMORPHISM = FUNCTION OVERLOADING 
+
+// #include <iostream>
+// using namespace std;
+
+// class Print {
+//     public:
+//     void show(int x) {
+//         cout<<"int :"<< x<<endl;
+//     }
+
+//     void show(string str) {
+//         cout<<"string :" <<str <<endl;
+//     }
+// };
+
+// int main () {
+
+//     Print obj1;
+//     obj1.show(25);
+//     obj1.show("apnacollge");
+
+
+//     return 0;
+// }
+
+
+
+// //POLYMORPHISM = FUNCTION OVERLOADING 
 
 #include <iostream>
 using namespace std;
 
-class Print {
+class Complex{
+
+    int real;
+    int img;
+
     public:
-    void show(int x) {
-        cout<<"int :"<< x<<endl;
+    Complex(int r, int i) {
+        real = r;
+        img = i;
+
     }
 
-    void show(string str) {
-        cout<<"string :" <<str <<endl;
+    void showNum() {
+        cout<< real <<" +" <<img<<"i \n";
     }
+
 };
 
 int main () {
 
-    Print obj1;
-    obj1.show(25);
-    obj1.show("apnacollge");
-    
+    Complex c1(1, 2);
+    Complex c2(3, 4);
+
+    c1.showNum();
+    c2.showNum();
 
     return 0;
 }
