@@ -562,38 +562,59 @@
 
 // ABSTRACT CLASS AND PURE VIRTUAL FUNCTION
 
+// #include <iostream>
+// using namespace std;
+
+// // abstract class
+// class Shape{
+//     public:
+//     virtual void  draw()=0; //ABSTRACT FNX , PURE VIRTUAL FNX
+// };
+
+// class Circle : public Shape {
+//     public :
+//     void draw() {
+//         cout<<"draw circle..\n";
+//     }
+// };
+
+// class Squre : public Shape{
+//     public: 
+//     void draw() {
+//         cout<< " draw squre ..\n";
+//     }
+// };
+
+// int main () {
+
+//     Circle cir1;
+//     cir1.draw();
+
+//     Squre squ1;
+//     squ1.draw();
+
+
+
+//     return 0;
+// }
+
+
+//  STATIC KEYWORD
+
 #include <iostream>
 using namespace std;
 
-// abstract class
-class Shape{
-    public:
-    virtual void  draw()=0; //ABSTRACT FNX , PURE VIRTUAL FNX
-};
+void counter () {
+    int count = 0;
+    count++;
+    cout<<"count :" << count<<endl;
+}
 
-class Circle : public Shape {
-    public :
-    void draw() {
-        cout<<"draw circle..\n";
-    }
-};
-
-class Squre : public Shape{
-    public: 
-    void draw() {
-        cout<< " draw squre ..\n";
-    }
-};
-
-int main () {
-
-    Circle cir1;
-    cir1.draw();
-
-    Squre squ1;
-    squ1.draw();
-
-
+int main() {
+    counter();
+    counter();
+    counter();
+    counter();
 
     return 0;
 }
