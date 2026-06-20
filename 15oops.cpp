@@ -668,32 +668,68 @@
 
 // FRIEND CLASS & FUNCTION////
 
+// #include <iostream>
+// using namespace std;
+// class A {
+//     string secret = "secret data";
+//     friend class B;
+//     friend void revealSecret(A &obj);
+// };
+
+// class B{//becames a friend class of A
+//     public:
+//     void showSecret(A &obj) {
+
+//         cout<<obj.secret<<endl;
+//     }
+// };
+
+// void revealSecret(A &obj) {
+//     cout<<obj.secret<<endl;
+// }
+
+// int main() {
+//     A a1;
+//     B b1;
+
+//     b1.showSecret(a1);
+
+//     revealSecret(a1);
+//     return 0;
+// }
+
+
+
+
+// PRACTICE QUESTION
+
 #include <iostream>
 using namespace std;
-class A {
-    string secret = "secret data";
-    friend class B;
-    friend void revealSecret(A &obj);
-};
 
-class B{//becames a friend class of A
+class Parent {
     public:
-    void showSecret(A &obj) {
+    Parent() {
+        cout<<"construtor A"<<endl;
+    }
 
-        cout<<obj.secret<<endl;
+    ~Parent() {
+        cout<< "distructor A" <<endl;
     }
 };
 
-void revealSecret(A &obj) {
-    cout<<obj.secret<<endl;
-}
+class Child : public Parent{
+    public:
+    Child() {
+        cout<<"constructor B"<<endl;
+    }
+
+    ~Child(){
+        cout<<"distructor B" <<endl;
+    }
+};
 
 int main() {
-    A a1;
-    B b1;
+    Child ch1;
 
-    b1.showSecret(a1);
-
-    revealSecret(a1);
     return 0;
 }
