@@ -735,4 +735,21 @@ int main () {
 // }
 
 
+#include <iostream>
+using namespace std;
 
+class Test {
+public:
+    Test() {
+        cout << "Constructor Called\n";
+    }
+
+    ~Test() {
+        cout << "Destructor Called\n";
+    }
+};
+
+int main() {
+    static Test t;
+    cout << "Main Function\n";
+}
