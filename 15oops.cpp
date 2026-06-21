@@ -1,30 +1,30 @@
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
-// class Student {
-//     public:
-//     string name;
-//     float cgpa;
+class Student {
+    public:
+    string name;
+    float cgpa;
 
-//     void getpercentage() {
-//         cout<< (cgpa * 10) << "% \n";
-//     }
-// };
+    void getpercentage() {
+        cout<< (cgpa * 10) << "% \n";
+    }
+};
 
-// int main () {
+int main () {
 
-//     Student s1;
+    Student s1;
 
-//     s1.name = "Dhoni";
-//     s1.cgpa= 9.0;
+    s1.name = "Dhoni";
+    s1.cgpa= 9.0;
 
-//     cout <<s1.name <<endl;
-//     cout<< s1.cgpa << endl;
+    cout <<s1.name <<endl;
+    cout<< s1.cgpa << endl;
 
-//     s1.getpercentage();
+    s1.getpercentage();
 
-//     return 0;
-// }
+    return 0;
+}
 
 
 
@@ -701,35 +701,35 @@
 
 
 
-// PRACTICE QUESTION
+// // PRACTICE QUESTION
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-class Parent {
-    public:
-    Parent() {
-        cout<<"construtor A"<<endl;
-    }
+// class Parent {
+//     public:
+//     Parent() {
+//         cout<<"construtor A"<<endl;
+//     }
 
-    ~Parent() {
-        cout<< "distructor A" <<endl;
-    }
-};
+//     ~Parent() {
+//         cout<< "distructor A" <<endl;
+//     }
+// };
 
-class Child : public Parent{
-    public:
-    Child() {
-        cout<<"constructor B"<<endl;
-    }
+// class Child : public Parent{
+//     public:
+//     Child() {
+//         cout<<"constructor B"<<endl;
+//     }
 
-    ~Child(){
-        cout<<"distructor B" <<endl;
-    }
-};
+//     ~Child(){
+//         cout<<"distructor B" <<endl;
+//     }
+// };
 
-int main() {
-    Child ch1;
+// int main() {
+//     Child ch1;
 
-    return 0;
-}
+//     return 0;
+// }
