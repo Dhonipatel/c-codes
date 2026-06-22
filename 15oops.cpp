@@ -1,30 +1,30 @@
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-class Student {
-    public:
-    string name;
-    float cgpa;
+// class Student {
+//     public:
+//     string name;
+//     float cgpa;
 
-    void getpercentage() {
-        cout<< (cgpa * 10) << "% \n";
-    }
-};
+//     void getpercentage() {
+//         cout<< (cgpa * 10) << "% \n";
+//     }
+// };
 
-int main () {
+// int main () {
 
-    Student s1;
+//     Student s1;
 
-    s1.name = "Dhoni";
-    s1.cgpa= 9.0;
+//     s1.name = "Dhoni";
+//     s1.cgpa= 9.0;
 
-    cout <<s1.name <<endl;
-    cout<< s1.cgpa << endl;
+//     cout <<s1.name <<endl;
+//     cout<< s1.cgpa << endl;
 
-    s1.getpercentage();
+//     s1.getpercentage();
 
-    return 0;
-}
+//     return 0;
+// }
 
 
 
@@ -735,21 +735,67 @@ int main () {
 // }
 
 
+
+// AASAIGMENT QUESTION
+
 #include <iostream>
 using namespace std;
 
-class Test {
-public:
-    Test() {
-        cout << "Constructor Called\n";
+class BankAccount{
+private:    
+    int accountNumber;
+    int blance;
+    public:
+
+    BankAccount(int accountNumber, int blance) {
+        this->accountNumber= accountNumber;
+        this->blance = blance;
     }
 
-    ~Test() {
-        cout << "Destructor Called\n";
+    void deposit(int amount) {
+        if(amount > 0) {  
+        this->blance +=amount;
+        cout<<"Desposit :"<<amount<<endl;
+
+        }else{
+            cout<<"not a vallid amount"<<endl;
+        }
     }
+    int getBlance() {
+        cout<<" current blance is "<<this->blance<<endl;
+        return blance;
+    }
+
+    void withdraw(int amount) {
+        if(amount <= this->blance) {
+            this->blance -=amount;
+            cout<<"Withdraw :" <<amount<<endl;
+        }else {
+            cout<<"Not a valid amount";
+        }
+    }
+
+
+
+
+    
 };
 
-int main() {
-    static Test t;
-    cout << "Main Function\n";
-}
+ int main() {
+
+    BankAccount b1(1, 500);
+
+    b1.getBlance();
+    b1.deposit(200);
+    b1.getBlance();
+    b1.withdraw(600);
+    b1.getBlance();
+    b1.withdraw(100);
+    b1.getBlance();
+    b1.withdraw(10);
+
+
+
+
+    return 0;
+ }
