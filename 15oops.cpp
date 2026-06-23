@@ -804,17 +804,17 @@ private:
 
 
 
- #include <iostream>
-using namespace std;
+//  #include <iostream>
+// using namespace std;
 
-class Student {
-private:
-    int marks = 95;
+// class Student {
+// private:
+//     int marks = 95;
 
-public:
-    friend void showMarks(Student s);
-};
+// public:
+//     friend void showMarks(Student s);
+// };
 
-void showMarks(Student s) {
-    cout << s.marks;
-}
+// void showMarks(Student s) {
+//     cout << s.marks;
+// }
