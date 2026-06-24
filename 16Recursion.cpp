@@ -1,19 +1,21 @@
-#include <iostream>
-using namespace std;
+// // FECTORIAL RECURSION
 
-// recursive function recursion
+// #include <iostream>
+// using namespace std;
 
-int fectorial(int n){
-    if(n == 0) {
-        return 1;
-    }
-    return n * fectorial(n-1);
+// // recursive function recursion
 
-}
+// int fectorial(int n){
+//     if(n == 0) {
+//         return 1;
+//     }
+//     return n * fectorial(n-1);
 
-int main() {
-    int ans = fectorial(5);
-    cout<<ans<<endl;
+// }
 
-    return 0; 
-}
+// int main() {
+//     int ans = fectorial(5);
+//     cout<<ans<<endl;
+
+//     return 0; 
+// }
