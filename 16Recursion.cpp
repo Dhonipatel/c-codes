@@ -73,25 +73,25 @@ int main() {
 
 // COUNT SET BIT
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int countSetBits(int num) {
-    int count = 0;
+// int countSetBits(int num) {
+//     int count = 0;
 
-    while(num > 0) {
-        int lastDig = num & 1;
-        count += lastDig;
+//     while(num > 0) {
+//         int lastDig = num & 1;
+//         count += lastDig;
 
-        num = num >> 1;
-    }
-    cout << count << endl;
-    return count;
-}
+//         num = num >> 1;
+//     }
+//     cout << count << endl;
+//     return count;
+// }
 
-int main () {
+// int main () {
 
-    countSetBits(10);
+//     countSetBits(10);
 
-    return 0;
-}
+//     return 0;
+// }
