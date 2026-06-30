@@ -69,7 +69,7 @@
 
 
 
-// 
+// PRINT NTH FIBONACCI NUMBER
 
 #include <iostream>
 using namespace std;
