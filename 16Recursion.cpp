@@ -46,51 +46,46 @@
 
 // SUM OF N NURUAL NUMBERS
 
+// #include <iostream>
+// using namespace std;
+
+// int sum(int n) {
+
+//     if(n == 1) {
+//         return 1;
+//     }
+
+//     return n + sum(n-1);
+// }
+
+
+// int main() {
+
+//     cout<< sum(6) <<endl;
+
+
+//     return 0;
+// }
+
+
+
+// 
+
 #include <iostream>
 using namespace std;
 
-int sum(int n) {
-
-    if(n == 1) {
-        return 1;
+int fibonacci(int n) {
+    if(n == 0 || n == 1) {// 0 , 1
+        return n;
     }
 
-    return n + sum(n-1);
+    return fibonacci(n-1) + fibonacci(n-2);
 }
-
 
 int main() {
 
-    cout<< sum(6) <<endl;
-
+    cout<< fibonacci(3) <<endl;
 
     return 0;
 }
 
-
-
-
-
-// COUNT SET BIT
-// #include <iostream>
-// using namespace std;
-
-// class Complex {
-// public:
-//     int real;
-//     int imag;
-
-//     Complex(int r, int i) {
-//         real = r;
-//         imag = i;
-//     }
-
-//     void display() {
-//         cout << real << " + " << imag << "i";
-//     }
-// };
-
-// int main() {
-//     Complex c1(3, 4);
-//     c1.display();
-// }
