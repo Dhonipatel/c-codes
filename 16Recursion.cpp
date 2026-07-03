@@ -89,27 +89,27 @@ int main() {
     return 0;
 }
 
-////////////////////////
-#include <iostream>
-using namespace std;
+// ////////////////////////
+// #include <iostream>
+// using namespace std;
 
-class Complex {
-public:
-    int real;
-    int imag;
+// class Complex {
+// public:
+//     int real;
+//     int imag;
 
-    Complex(int r, int i) {
-        real = r;
-        imag = i;
-    }
+//     Complex(int r, int i) {
+//         real = r;
+//         imag = i;
+//     }
 
-    void display() {
-        cout << real << " + " << imag << "i";
-    }
-};
+//     void display() {
+//         cout << real << " + " << imag << "i";
+//     }
+// };
 
-int main() {
-    Complex c1(3, 4);
-    c1.display();
-}
+// int main() {
+//     Complex c1(3, 4);
+//     c1.display();
+// }
 
