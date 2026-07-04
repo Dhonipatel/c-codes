@@ -89,25 +89,25 @@ int main() {
     return 0;
 }
 
-// #include <iostream>
-using namespace std;
+// // #include <iostream>
+// using namespace std;
 
-class Animal {
-public:
-    virtual void sound() {
-        cout << "Animal Sound" << endl;
-    }
-};
+// class Animal {
+// public:
+//     virtual void sound() {
+//         cout << "Animal Sound" << endl;
+//     }
+// };
 
-class Dog : public Animal {
-public:
-    void sound() override {
-        cout << "Bark" << endl;
-    }
-};
+// class Dog : public Animal {
+// public:
+//     void sound() override {
+//         cout << "Bark" << endl;
+//     }
+// };
 
-int main() {
-    Animal* a = new Dog();
-    a->sound();
-}
+// int main() {
+//     Animal* a = new Dog();
+//     a->sound();
+// }
 
