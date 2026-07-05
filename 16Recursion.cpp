@@ -71,43 +71,47 @@
 
 // PRINT NTH FIBONACCI NUMBER
 
+// #include <iostream>
+// using namespace std;
+
+// int fibonacci(int n) {
+//     if(n == 0 || n == 1) {// 0 , 1
+//         return n;
+//     }
+
+//     return fibonacci(n-1) + fibonacci(n-2);
+// }
+
+// int main() {
+
+//     cout<< fibonacci(3) <<endl;
+
+//     return 0;
+// }
+
+ 
+
 #include <iostream>
 using namespace std;
 
-int fibonacci(int n) {
-    if(n == 0 || n == 1) {// 0 , 1
-        return n;
+bool isSorted(int arr [], int n, int i) {
+    if(i == n-1) {
+        return true;
+    }
+    
+    if(arr[i] > arr[i+1]) {
+        return false;
     }
 
-    return fibonacci(n-1) + fibonacci(n-2);
+    return isSorted(arr, n, i+1);
 }
 
 int main() {
 
-    cout<< fibonacci(3) <<endl;
+    int arr1[5] = {1, 2, 3, 4, 5,};// sorted :1
+    int arr2[5] = {1, 2, 4, 3,  5,};//unsorted :0
+    cout<<isSorted( arr2, 5, 0);
 
     return 0;
-}
-
-// // #include <iostream>
-// using namespace std;
-
-// class Animal {
-// public:
-//     virtual void sound() {
-//         cout << "Animal Sound" << endl;
-//     }
-// };
-
-// class Dog : public Animal {
-// public:
-//     void sound() override {
-//         cout << "Bark" << endl;
-//     }
-// };
-
-// int main() {
-//     Animal* a = new Dog();
-//     a->sound();
-// }
+};
 
