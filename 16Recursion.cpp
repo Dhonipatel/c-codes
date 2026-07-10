@@ -118,3 +118,16 @@ int main() {
 
 
 
+class A {
+private:
+    int x = 10;
+
+    friend class B;
+};
+
+class B {
+public:
+    void show(A a) {
+        cout << a.x;
+    }
+};
