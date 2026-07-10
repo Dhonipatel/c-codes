@@ -118,16 +118,16 @@ int main() {
 
 
 
-class A {
-private:
-    int x = 10;
+// class A {
+// private:
+//     int x = 10;
 
-    friend class B;
-};
+//     friend class B;
+// };
 
-class B {
-public:
-    void show(A a) {
-        cout << a.x;
-    }
-};
+// class B {
+// public:
+//     void show(A a) {
+//         cout << a.x;
+//     }
+// };
