@@ -14,10 +14,7 @@
 
 // }
 
-// //int main (){
-// int ans = factorial(5);
-// cout<< ans <<endl;
-
+// // 
 
 // return 0;
 
@@ -26,13 +23,13 @@
 // #include <iostream>
 // using namespace std;
 
-// void print(int n) {
-//     if(n == 0) {
+// void print  (int n) {
+//     if(n==0) {
 //         return;
 //     }
 
-//     cout<<n<<endl;
-//     print (n-1);
+//     cout<<n<< " " <<endl;
+//     print(n-1); faith next call
 // }
 
 // int main() {
