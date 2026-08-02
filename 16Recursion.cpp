@@ -5,23 +5,23 @@
 
 // // recursive function recursion
 
-// int fectorial(int n){
-//     if(n == 0) {
+// int fectorial(int n) {
+//     if(n==0) {
 //         return 1;
 //     }
-//     return n * fectorial(n-1);
+
+//    return n* fectorial(n-1);
 
 // }
 
-// int main() {
-//     int ans = fectorial(5);
-//     cout<<ans<<endl;
+// //int main (){
+// int ans = factorial(5);
+// cout<< ans <<endl;
 
-//     return 0; 
+
+// return 0;
+
 // }
-
-
-// PRINT NUMBERS IN DECREASING ORDER
 
 // #include <iostream>
 // using namespace std;
