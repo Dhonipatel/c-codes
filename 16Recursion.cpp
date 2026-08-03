@@ -120,25 +120,4 @@
 
 
 
-#include <iostream>
-using namespace std;
-
-class Complex {
-public:
-    int real;
-    int imag;
-
-    Complex(int r, int i) {
-        real = r;
-        imag = i;
-    }
-
-    void display() {
-        cout << real << " + " << imag << "i";
-    }
-};
-
-int main() {
-    Complex c1(3, 4);
-    c1.display();
-}
+// #ch
