@@ -66,55 +66,55 @@
 
 
 
-// PRINT NTH FIBONACCI NUMBER
+PRINT NTH FIBONACCI NUMBER
 
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
-// int fibonacci(int n) {
-//     if(n == 0 || n == 1) {// 0 , 1
-//         return n;
-//     }
+int fibonacci(int n) {
+    if(n == 0 || n == 1) {// 0 , 1
+        return n;
+    }
 
-//     return fibonacci(n-1) + fibonacci(n-2);
-// }
+    return fibonacci(n-1) + fibonacci(n-2);
+}
 
-// int main() {
+int main() {
 
-//     cout<< fibonacci(3) <<endl;
+    cout<< fibonacci(3) <<endl;
 
-//     return 0;
-// }
+    return 0;
+}
 
  
 
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
-// bool isSorted(int arr [], int n, int i) {
-//     if(i == n-1) {
-//         return true;
-//     }
+bool isSorted(int arr [], int n, int i) {
+    if(i == n-1) {
+        return true;
+    }
     
-//     if(arr[i] > arr[i+1]) {
-//         return false;
-//     }
+    if(arr[i] > arr[i+1]) {
+        return false;
+    }
 
-//     return isSorted(arr, n, i+1);
-// }
+    return isSorted(arr, n, i+1);
+}
 
-// int main() {
+int main() {
 
-//     int arr1[5] = {1, 2, 3, 4, 5,};// sorted :1
-//     int arr2[5] = {1, 2, 4, 3,  5,};//unsorted :0
-//     cout<<isSorted( arr2, 5, 0);
+    int arr1[5] = {1, 2, 3, 4, 5,};// sorted :1
+    int arr2[5] = {1, 2, 4, 3,  5,};//unsorted :0
+    cout<<isSorted( arr2, 5, 0);
 
-//     return 0;
-// };
+    return 0;
+};
 
 
 
-// // #
+// #
 
 
 
