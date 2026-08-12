@@ -66,7 +66,7 @@
 
 
 
-// PRINT NTH FIBONACCI NUMBER
+//// PRINT NTH FIBONACCI NUMBER
 
 // #include <iostream>
 // using namespace std;
@@ -114,10 +114,10 @@
 
 
 
-// #
+#
 
 
 
 
 
-// // #ch
+// #part 2
