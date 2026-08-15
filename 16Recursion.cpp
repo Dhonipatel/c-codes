@@ -121,3 +121,23 @@
 
 
 // #part 2
+
+
+#include <iostream>
+using namespace std;
+
+      int tilingproblem(int n) {   //2x1
+    if(n==0 || n==1) {
+        return 1;
+    }
+    return tilingproblem(n-1) + tilingproblem(n-2);
+}
+
+
+int main() {
+    int n=3;
+
+    cout << tilingproblem(5) << endl; //2x5
+
+    return 0;
+}
