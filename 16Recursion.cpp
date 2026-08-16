@@ -120,24 +120,69 @@
 
 
 
-// #part 2
+// // #part 2
+
+// TILLING PROBLEM GOOGLE
+
+
+// #include <iostream>
+// using namespace std;
+
+//       int tilingproblem(int n) {   //2x1
+//     if(n==0 || n==1) {
+//         return 1; 
+//     }
+//     return tilingproblem(n-1) + tilingproblem(n-2);
+// }
+
+
+// int main() {
+//     int n=3;
+
+//     cout << tilingproblem(5) << endl; //2x5
+
+//     return 0;
+// }
+
+
+
+
+
 
 
 #include <iostream>
+#include <string>
 using namespace std;
 
-      int tilingproblem(int n) {   //2x1
-    if(n==0 || n==1) {
-        return 1; 
+void removeDuplicates (string str, string ans, int i, int map[26]) {
+
+    if(i == str.size()) {
+        cout<< "ans :" <<ans <<endl;
+        return;
     }
-    return tilingproblem(n-1) + tilingproblem(n-2);
+
+
+    int mapIdx = (int)(str[i] - 'a');
+
+    if(map[mapIdx]) { // duplicate
+        removeDuplicates(str , ans, i+1, map);
+
+    } else { // not dupllicate
+
+        map[mapIdx] = true;
+        removeDuplicates(str, ans+str[i], i+1, map);
+
+    }
 }
 
 
 int main() {
-    int n=3;
 
-    cout << tilingproblem(5) << endl; //2x5
+    string str = "appnnacollege";
+    string ans = "" ;
+    int map[26] = {false};
+
+    removeDuplicates(str , ans , 0 , map);
 
     return 0;
 }
