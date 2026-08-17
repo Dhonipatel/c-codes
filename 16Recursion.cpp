@@ -189,29 +189,57 @@
 
 
 
-// FRIEND PAIRING PROBLEM
+// // FRIEND PAIRING PROBLEM
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int friendPairing(int n) {
+// int friendPairing(int n) {
     
-    if(n == 1 || n == 2) {
-        return n;
-    }
+//     if(n == 1 || n == 2) {
+//         return n;
+//     }
 
-    return friendPairing(n-1) + (n-1) * friendPairing(n-2);
+//     return friendPairing(n-1) + (n-1) * friendPairing(n-2);
 
 
-}
+// }
 
-int main()  {
+// int main()  {
 
   
 
-    cout << "way = "  << friendPairing(4) <<endl;
+//     cout << "way = "  << friendPairing(4) <<endl;
+
+//     return 0;
+// }
+
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+void brinString(int n, int lastPlace, string ans) {
+    if(n == 0) {
+        cout<< ans <<endl;
+        return;
+    }
+
+    if(lastPlace != 1) {
+        brinString(n-1, 0, ans+ '0');
+        brinString(n-1, 1 , ans + '1');
+    } else {
+        brinString(n-1, 0, ans +'0');
+    }
+}
+
+int main(){
 
     return 0;
 }
+
+
+
 
 
