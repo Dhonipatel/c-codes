@@ -150,44 +150,68 @@
 
 // REMOVE DUPLICATES IN STRING
 
+// #include <iostream>
+// #include <string>
+// using namespace std;
+
+// void removeDuplicates (string str, string ans, int i, int map[26]) {
+
+//     if(i == str.size()) {
+//         cout<< "ans :" <<ans <<endl;
+//         return;
+//     }
+
+
+//     int mapIdx = (int)(str[i] - 'a');
+
+//     if(map[mapIdx]) { // duplicate
+//         removeDuplicates(str , ans, i+1, map);
+
+//     } else { // not dupllicate
+
+//         map[mapIdx] = true;
+//         removeDuplicates(str, ans+str[i], i+1, map);
+
+//     }
+// }
+
+
+// int main() {
+
+//     string str = "appnnacollege";
+//     string ans = "" ;
+//     int map[26] = {false};
+
+//     removeDuplicates(str , ans , 0 , map);
+
+//     return 0;
+// }
+
+
+
+// FRIEND PAIRING PROBLEM
+
 #include <iostream>
-#include <string>
 using namespace std;
 
-void removeDuplicates (string str, string ans, int i, int map[26]) {
-
-    if(i == str.size()) {
-        cout<< "ans :" <<ans <<endl;
-        return;
+int friendPairing(int n) {
+    
+    if(n == 1 || n == 2) {
+        return n;
     }
 
+    return friendPairing(n-1) + (n-1) * friendPairing(n-2);
 
-    int mapIdx = (int)(str[i] - 'a');
 
-    if(map[mapIdx]) { // duplicate
-        removeDuplicates(str , ans, i+1, map);
-
-    } else { // not dupllicate
-
-        map[mapIdx] = true;
-        removeDuplicates(str, ans+str[i], i+1, map);
-
-    }
 }
 
+int main()  {
 
-int main() {
+  
 
-    string str = "appnnacollege";
-    string ans = "" ;
-    int map[26] = {false};
-
-    removeDuplicates(str , ans , 0 , map);
+    cout << "way = "  << friendPairing(4) <<endl;
 
     return 0;
 }
-
-
-
 
 
