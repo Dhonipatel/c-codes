@@ -236,6 +236,9 @@ void brinString(int n, int lastPlace, string ans) {
 
 int main(){
 
+    string ans ="" ;
+    brinString(3, 0, ans);
+
     return 0;
 }
 
