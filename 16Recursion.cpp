@@ -216,31 +216,31 @@
 
 
 
-#include <iostream>
-#include <string>
-using namespace std;
+// #include <iostream>
+// #include <string>
+// using namespace std;
 
-void brinString(int n, int lastPlace, string ans) {
-    if(n == 0) {
-        cout<< ans <<endl;
-        return;
-    }
+// void brinString(int n, int lastPlace, string ans) {
+//     if(n == 0) {
+//         cout<< ans <<endl;
+//         return;
+//     }
 
-    if(lastPlace != 1) {
-        brinString(n-1, 0, ans+ '0');
-        brinString(n-1, 1 , ans + '1');
-    } else {
-        brinString(n-1, 0, ans +'0');
-    }
-}
+//     if(lastPlace != 1) {
+//         brinString(n-1, 0, ans+ '0');
+//         brinString(n-1, 1 , ans + '1');
+//     } else {
+//         brinString(n-1, 0, ans +'0');
+//     }
+// }
 
-int main(){
+// int main(){
 
-    string ans ="" ;
-    brinString(3, 0, ans);
+//     string ans ="" ;
+//     brinString(3, 0, ans);
 
-    return 0;
-}
+//     return 0;
+// }
 
 
 
