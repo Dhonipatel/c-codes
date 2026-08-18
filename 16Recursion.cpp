@@ -215,6 +215,7 @@
 // }
 
 
+//// BAINARY 
 
 // #include <iostream>
 // #include <string>
@@ -241,6 +242,11 @@
 
 //     return 0;
 // }
+
+
+
+
+////////// LIVE SESSION CODE //////////
 
 
 
