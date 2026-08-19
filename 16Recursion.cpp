@@ -279,32 +279,36 @@
 // }
 
 
-// 1FIRST QUESTION////
+// 1FIRST QUESTION OCCUREANCES FIND////
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-void allOccurences(int arr[], int n, int idx, int key) {
-    if(idx == n) {
-    return;
-}
+// void allOccurences(int arr[], int n, int idx, int key) {
+//     if(idx == n) {
+//     return;
+// }
 
-    if(arr[idx] == key){
-        cout<<idx<<endl;
+//     if(arr[idx] == key){
+//         cout<<idx<<endl;
 
-    }
-    allOccurences(arr, n, idx+1, key);
-}
+//     }
+//     allOccurences(arr, n, idx+1, key);
+// }
 
-int main() {
+// int main() {
 
-    int arr[8]={3, 2, 5, 2, 6, 7, 2, 1};
-    int n= 8;
-    int key= 2;
+//     int arr[8]={3, 2, 5, 2, 6, 7, 2, 1};
+//     int n= 8;
+//     int key= 2;
     
-    allOccurences(arr, n, 0, key);
+//     allOccurences(arr, n, 0, key);
 
-    return 0;
+//     return 0;
 
 
-}
+// }
+
+
+// BINARY SEARCH
+
