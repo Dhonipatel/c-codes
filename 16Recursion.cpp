@@ -250,31 +250,61 @@
 
 
 
+// #include <iostream>
+// using namespace std;
+
+// int powerIterative (int a, int n) {
+//     int ans =1;
+//     for(int i=0; i<n; i++) {
+//         ans*=a;
+//     }
+//     return ans;
+// }
+
+// int powerRecursive(int a , int n){
+
+//     if(n == 0) {
+//         return 1;
+//     }
+
+//     int ans = a* powerRecursive(a, (n-1));
+//     return ans;
+// }
+
+// int main (){
+//  int ans = powerRecursive(3, 5);
+//  cout<<ans<<endl;
+
+//     return 0;
+// }
+
+
+// 1FIRST QUESTION////
+
 #include <iostream>
 using namespace std;
 
-int powerIterative (int a, int n) {
-    int ans =1;
-    for(int i=0; i<n; i++) {
-        ans*=a;
-    }
-    return ans;
+void allOccurences(int arr[], int n, int idx, int key) {
+    if(idx == n) {
+    return;
 }
 
-int powerRecursive(int a , int n){
+    if(arr[idx] == key){
+        cout<<idx<<endl;
 
-    if(n == 0) {
-        return 1;
     }
-
-    int ans = a* powerRecursive(a, (n-1));
-    return ans;
+    allOccurences(arr, n, idx+1, key);
 }
 
-int main (){
- int ans = powerRecursive(3, 5);
- cout<<ans<<endl;
+int main() {
+
+    int arr[8]={3, 2, 5, 2, 6, 7, 2, 1};
+    int n= 8;
+    int key= 2;
+    
+    allOccurences(arr, n, 0, key);
 
     return 0;
-}
 
+
+}
