@@ -20,7 +20,7 @@ void changeArr(int arr[], int n, int i) {
     }
     arr[i] = i+1;
     changeArr(arr, n, i+1);
-    arr[i] -= 2;
+    arr[i] -= 2;  // backtrack
 
 }
 
@@ -29,6 +29,7 @@ int main() {
     int n= 5;
 
     changeArr(arr, n, 0);
+    printArr(arr, n);
 
     return 0;
 }
