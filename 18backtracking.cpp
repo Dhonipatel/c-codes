@@ -1,35 +1,40 @@
-#include <iostream>
-#include <string>
-#include <vector>
-using namespace std;
+//BACKTRACK ON ARRAY
 
-void printArr(int arr[], int n ) {
-    for(int i=0; i<n; i++) {
-        cout<< arr[i] << " ";
 
-    }
+// #include <iostream>
+// #include <string>
+// #include <vector>
+// using namespace std;
 
-    cout << endl;
-}
+// void printArr(int arr[], int n ) {
+//     for(int i=0; i<n; i++) {
+//         cout<< arr[i] << " ";
 
-void changeArr(int arr[], int n, int i) {
-    if(i == n) {
-        printArr(arr,n);
-        return;
+//     }
 
-    }
-    arr[i] = i+1;
-    changeArr(arr, n, i+1);
-    arr[i] -= 2;  // backtrack
+//     cout << endl;
+// }
 
-}
+// void changeArr(int arr[], int n, int i) {
+//     if(i == n) {
+//         printArr(arr,n);
+//         return;
 
-int main() {
-    int arr[5] = {0};
-    int n= 5;
+//     }
+//     arr[i] = i+1;
+//     changeArr(arr, n, i+1);
+//     arr[i] -= 2;  // backtrack
 
-    changeArr(arr, n, 0);
-    printArr(arr, n);
+// }
 
-    return 0;
-}
+// int main() {
+//     int arr[5] = {0};
+//     int n= 5;
+
+//     changeArr(arr, n, 0);
+//     printArr(arr, n);
+
+//     return 0;
+// }
+
+
