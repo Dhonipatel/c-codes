@@ -1,30 +1,30 @@
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-class Node {
-    int data;
-    Node* next;
+// class Node {
+//     int data;
+//     Node* next;
 
-public:
-    Node(int val) {
-        data = val;
-        next = NULL;
-    }
-};
+// public:
+//     Node(int val) {
+//         data = val;
+//         next = NULL;
+//     }
+// };
 
-class List {
-    Node* head;
-    Node* tail;
+// class List {
+//     Node* head;
+//     Node* tail;
 
-public:
-    List() {
-        head = NULL;
-        tail = NULL;
-    }
-};
+// public:
+//     List() {
+//         head = NULL;
+//         tail = NULL;
+//     }
+// };
 
-int main() {
-    List ll();
+// int main() {
+//     List ll();
 
-    return 0;
-}
+//     return 0;
+// }
