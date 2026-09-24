@@ -20,6 +20,14 @@ public:
     List() {
         head = NULL;
         tail = NULL;
+        tail = NULL;
+        tail = NULL;
+        tail = NULL;
+        tail = NULL;
+        
+        
+        
+
     }
 };
 
