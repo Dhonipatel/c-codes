@@ -45,6 +45,18 @@ public:
         }
     }
 
+    void printList() {
+    Node* temp = head;
+
+    while (temp != NULL) {
+        cout<< temp->data <<"-->";
+        temp = temp->next;
+
+    }
+    cout<< " NULL\n";
+
+    }
+
 };
 
 int main() {
@@ -52,6 +64,13 @@ int main() {
     ll.push_front(3);
     ll.push_front(2);
     ll.push_front(1);
+
+    ll.printList();
+
+    ll.push_back(5);
+    ll.push_back(6);
+
+    ll.printList();
     
     
     
