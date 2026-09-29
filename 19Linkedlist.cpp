@@ -63,6 +63,12 @@ public:
         Node* temp = head;
 
         for(int i=0; i<pos-1; i++) {
+
+            if (temp == NULL)
+            {
+                cout<<"position is invailid \n";
+            }
+            
             temp = temp->next;
         }
 
@@ -84,6 +90,9 @@ int main() {
     ll.push_back(5);
     ll.push_back(6);
 
+    ll.printList();
+
+    ll.insert(100, 2);
     ll.printList();
     
     
