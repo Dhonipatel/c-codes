@@ -57,6 +57,20 @@ public:
 
     }
 
+    void insert(int val, int pos) {
+        Node* newNode = new Node(val);
+
+        Node* temp = head;
+
+        for(int i=0; i<pos-1; i++) {
+            temp = temp->next;
+        }
+
+        // temp is now at pos-1 i.e. prev/ left
+        newNode->next = temp->next;
+        temp-> next = newNode;
+    }
+
 };
 
 int main() {
