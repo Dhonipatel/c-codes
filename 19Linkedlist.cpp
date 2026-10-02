@@ -11,6 +11,14 @@ public:
         next = NULL;
     }
     friend class List;  // 
+
+    Node() {
+        if(next != NULL) {
+            delete next;
+            next = NULL;
+        }
+    }
+
 };
 
 class List {
@@ -22,6 +30,19 @@ public:
         head = NULL;
         tail = NULL; 
     }
+
+
+    // 
+    
+
+        ~List() {
+            cout<<" destructor of List\n";
+        if(head != NULL )   
+        delete head;
+        head = NULL;
+
+  }
+
 
     void push_front(int val) {
         Node* newNode = new Node(val); // dynamic
