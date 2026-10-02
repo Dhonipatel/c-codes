@@ -75,7 +75,7 @@ public:
         // temp is now at pos-1 i.e. prev/ left
         newNode->next = temp->next;
         temp-> next = newNode;
-    }
+    } 
 
 };
 
