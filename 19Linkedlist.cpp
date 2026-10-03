@@ -128,6 +128,26 @@ int searchItr(int key) {
     return -1;
 }
 
+void reverse() {
+    Node* curr = head;
+    Node* prev = NULL;
+    tail = head;
+
+    while(curr != NULL) {
+        Node* next = curr->next;
+        curr->next = prev;
+
+        // updations for next itr
+         prev = curr;
+         curr = next;
+    }
+
+    head = prev;
+
+
+    
+}
+
 
 
 };
@@ -140,12 +160,15 @@ int main() {
     ll.push_front(2);
     ll.push_front(1);
 
+      ll.reverse();
+
     ll.printList();
+
 
     // ll.pop_front();
     // ll.printList();
 
-    cout<<ll.searchItr(5);
+    // cout<<ll.searchItr(5);
 
 
     // ll.push_back(5);
