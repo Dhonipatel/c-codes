@@ -12,8 +12,10 @@ public:
     }
     friend class List;  // 
 
-    Node() {
+    ~Node() {
+       
         if(next != NULL) {
+            //  cout<<"Node" << data <<endl;
             delete next;
             next = NULL;
         }
@@ -36,7 +38,7 @@ public:
     
 
         ~List() {
-            cout<<" destructor of List\n";
+            // cout<<"  ~List\n";
         if(head != NULL )   
         delete head;
         head = NULL;
@@ -95,26 +97,64 @@ public:
 
         // temp is now at pos-1 i.e. prev/ left
         newNode->next = temp->next;
-        temp-> next = newNode;
+        temp->next = newNode;
     } 
+
+    void pop_front() {
+        if(head == NULL) {
+            cout<<"LL is empty"<<endl;
+            return;
+
+        }
+
+        Node* temp = head;
+        head = head->next;
+
+        temp->next = NULL;
+        delete temp;
+    }
+
+int searchItr(int key) {
+    Node* temp = head;
+    int idx=0;
+
+    while(temp != NULL) {
+        if(temp->data == key) {
+            return idx;
+        }
+        temp = temp->next;
+        idx++;
+    }
+    return -1;
+}
+
+
 
 };
 
 int main() {
     List ll;
+    ll.push_front(5);
+    ll.push_front(4);
     ll.push_front(3);
     ll.push_front(2);
     ll.push_front(1);
 
     ll.printList();
 
-    ll.push_back(5);
-    ll.push_back(6);
+    // ll.pop_front();
+    // ll.printList();
 
-    ll.printList();
+    cout<<ll.searchItr(5);
 
-    ll.insert(100, 2);
-    ll.printList();
+
+    // ll.push_back(5);
+    // ll.push_back(6);
+
+    // ll.printList();
+
+    // ll.insert(100, 2);
+    // ll.printList();
     
     
     
